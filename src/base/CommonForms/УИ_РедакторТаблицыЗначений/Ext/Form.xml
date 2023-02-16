@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаПрименить" id="3">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Применить</CommandName>
+				<ExtendedTooltip name="ФормаПрименитьРасширеннаяПодсказка" id="4"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="1">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаКолонкиТаблицы" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колонки таблицы</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ГруппаКолонкиТаблицыРасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<Table name="КолонкиТаблицы" id="20">
+					<Representation>List</Representation>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>КолонкиТаблицы</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="КолонкиТаблицыКонтекстноеМеню" id="22"/>
+					<AutoCommandBar name="КолонкиТаблицыКоманднаяПанель" id="21"/>
+					<ExtendedTooltip name="КолонкиТаблицыРасширеннаяПодсказка" id="23"/>
+					<SearchStringAddition name="КолонкиТаблицыСтрокаПоиска" id="24">
+						<AdditionSource>
+							<Item>КолонкиТаблицы</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КолонкиТаблицыСтрокаПоискаКонтекстноеМеню" id="25"/>
+						<ExtendedTooltip name="КолонкиТаблицыСтрокаПоискаРасширеннаяПодсказка" id="26"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="КолонкиТаблицыСостояниеПросмотра" id="30">
+						<AdditionSource>
+							<Item>КолонкиТаблицы</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КолонкиТаблицыСостояниеПросмотраКонтекстноеМеню" id="31"/>
+						<ExtendedTooltip name="КолонкиТаблицыСостояниеПросмотраРасширеннаяПодсказка" id="32"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="КолонкиТаблицыУправлениеПоиском" id="27">
+						<AdditionSource>
+							<Item>КолонкиТаблицы</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="КолонкиТаблицыУправлениеПоискомКонтекстноеМеню" id="28"/>
+						<ExtendedTooltip name="КолонкиТаблицыУправлениеПоискомРасширеннаяПодсказка" id="29"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnEditEnd">КолонкиТаблицыПриОкончанииРедактирования</Event>
+						<Event name="BeforeEditEnd">КолонкиТаблицыПередОкончаниемРедактирования</Event>
+						<Event name="AfterDeleteRow">КолонкиТаблицыПослеУдаления</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="КолонкиТаблицыИмя" id="33">
+							<DataPath>КолонкиТаблицы.Имя</DataPath>
+							<ContextMenu name="КолонкиТаблицыИмяКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="КолонкиТаблицыИмяРасширеннаяПодсказка" id="35"/>
+						</InputField>
+						<InputField name="КолонкиТаблицыТипЗначения" id="45">
+							<DataPath>КолонкиТаблицы.ТипЗначения</DataPath>
+							<EditMode>Directly</EditMode>
+							<ChoiceButton>true</ChoiceButton>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="КолонкиТаблицыТипЗначенияКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="КолонкиТаблицыТипЗначенияРасширеннаяПодсказка" id="47"/>
+							<Events>
+								<Event name="StartChoice">КолонкиТаблицыТипЗначенияНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="КолонкиТаблицыКвалификаторы" id="39">
+							<DataPath>КолонкиТаблицы.Квалификаторы</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КолонкиТаблицыКвалификаторыКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="КолонкиТаблицыКвалификаторыРасширеннаяПодсказка" id="41"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаЗначений" id="5">
+			<Representation>List</Representation>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ТаблицаЗначений</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаЗначенийКонтекстноеМеню" id="7"/>
+			<AutoCommandBar name="ТаблицаЗначенийКоманднаяПанель" id="6"/>
+			<ExtendedTooltip name="ТаблицаЗначенийРасширеннаяПодсказка" id="8"/>
+			<SearchStringAddition name="ТаблицаЗначенийСтрокаПоиска" id="9">
+				<AdditionSource>
+					<Item>ТаблицаЗначений</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаЗначенийСтрокаПоискаКонтекстноеМеню" id="10"/>
+				<ExtendedTooltip name="ТаблицаЗначенийСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаЗначенийСостояниеПросмотра" id="15">
+				<AdditionSource>
+					<Item>ТаблицаЗначений</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаЗначенийСостояниеПросмотраКонтекстноеМеню" id="16"/>
+				<ExtendedTooltip name="ТаблицаЗначенийСостояниеПросмотраРасширеннаяПодсказка" id="17"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаЗначенийУправлениеПоиском" id="12">
+				<AdditionSource>
+					<Item>ТаблицаЗначений</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаЗначенийУправлениеПоискомКонтекстноеМеню" id="13"/>
+				<ExtendedTooltip name="ТаблицаЗначенийУправлениеПоискомРасширеннаяПодсказка" id="14"/>
+			</SearchControlAddition>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТаблицаЗначений" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица значений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КолонкиТаблицы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колонки таблицы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипЗначения" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип значения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Квалификаторы" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Квалификаторы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Применить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Применить</Action>
+		</Command>
+	</Commands>
+</Form>

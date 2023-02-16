@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаОК" id="4">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Применить</CommandName>
+				<ExtendedTooltip name="ФормаОКРасширеннаяПодсказка" id="5"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="6">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="7"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаДосутныеПоляИМетоды" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа досутные поля и методы</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДосутныеПоляИМетодыРасширеннаяПодсказка" id="31"/>
+			<ChildItems>
+				<Table name="ПоляСКД" id="8">
+					<Representation>Tree</Representation>
+					<ReadOnly>true</ReadOnly>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<EnableStartDrag>true</EnableStartDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>ПоляСКД</DataPath>
+					<ContextMenu name="ПоляСКДКонтекстноеМеню" id="10"/>
+					<AutoCommandBar name="ПоляСКДКоманднаяПанель" id="9">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ПоляСКДРасширеннаяПодсказка" id="11"/>
+					<SearchStringAddition name="ПоляСКДСтрокаПоиска" id="12">
+						<AdditionSource>
+							<Item>ПоляСКД</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПоляСКДСтрокаПоискаКонтекстноеМеню" id="13"/>
+						<ExtendedTooltip name="ПоляСКДСтрокаПоискаРасширеннаяПодсказка" id="14"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПоляСКДСостояниеПросмотра" id="18">
+						<AdditionSource>
+							<Item>ПоляСКД</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПоляСКДСостояниеПросмотраКонтекстноеМеню" id="19"/>
+						<ExtendedTooltip name="ПоляСКДСостояниеПросмотраРасширеннаяПодсказка" id="20"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПоляСКДУправлениеПоиском" id="15">
+						<AdditionSource>
+							<Item>ПоляСКД</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПоляСКДУправлениеПоискомКонтекстноеМеню" id="16"/>
+						<ExtendedTooltip name="ПоляСКДУправлениеПоискомРасширеннаяПодсказка" id="17"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">ПоляСКДВыбор</Event>
+					</Events>
+					<ChildItems>
+						<ColumnGroup name="ПоляСКДГруппаПоле" id="32">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поля СКДГруппа поле</v8:content>
+								</v8:item>
+							</Title>
+							<Group>InCell</Group>
+							<ExtendedTooltip name="ПоляСКДГруппаПолеРасширеннаяПодсказка" id="33"/>
+							<ChildItems>
+								<PictureField name="ПоляСКДКартинка" id="34">
+									<DataPath>ПоляСКД.Картинка</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ПоляСКДКартинкаКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ПоляСКДКартинкаРасширеннаяПодсказка" id="36"/>
+								</PictureField>
+								<InputField name="ПоляСКДПоле" id="21">
+									<DataPath>ПоляСКД.Поле</DataPath>
+									<ContextMenu name="ПоляСКДПолеКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="ПоляСКДПолеРасширеннаяПодсказка" id="23"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<TextDocumentField name="ПолеРедактированияВыражения" id="1">
+			<DataPath>ПолеРедактированияВыражения</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ПолеРедактированияВыраженияКонтекстноеМеню" id="2">
+				<Autofill>false</Autofill>
+			</ContextMenu>
+			<ExtendedTooltip name="ПолеРедактированияВыраженияРасширеннаяПодсказка" id="3"/>
+		</TextDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ПолеРедактированияВыражения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле редактирования выражения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстВыражения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст выражения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоляСКД" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поля СКД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Поле" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поле</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПутьКДанным" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь к данным</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Картинка" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТипЗначения" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип значения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Применить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Применить</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Group>AlwaysHorizontal</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ПолучитьСписокЛицензий" id="71">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьСписокЛицензий</CommandName>
+				<ExtendedTooltip name="ПолучитьСписокЛицензийРасширеннаяПодсказка" id="72"/>
+			</Button>
+			<Button name="ПолучитьПолнуюИнформациюОЛицензии" id="73">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьПолнуюИнформациюОЛицензии</CommandName>
+				<ExtendedTooltip name="ПолучитьПолнуюИнформациюОЛицензииРасширеннаяПодсказка" id="74"/>
+			</Button>
+			<Button name="ПроверкаВалидностиЛицензий" id="75">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПроверкаВалидностиЛицензий</CommandName>
+				<ExtendedTooltip name="ПроверкаВалидностиЛицензийРасширеннаяПодсказка" id="76"/>
+			</Button>
+			<Button name="ФормаАктивироватьЛицензию" id="159">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.АктивироватьЛицензию</CommandName>
+				<ExtendedTooltip name="ФормаАктивироватьЛицензиюРасширеннаяПодсказка" id="160"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="СписокЛицензий" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.СписокЛицензий</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокЛицензийКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокЛицензийКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="СписокЛицензийПовторнаяАктивацияЛицензии" id="153">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПовторнаяАктивацияЛицензии</CommandName>
+						<ExtendedTooltip name="СписокЛицензийПовторнаяАктивацияЛицензииРасширеннаяПодсказка" id="154"/>
+					</Button>
+					<Button name="СписокЛицензийУдалитьЛицензию" id="155">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УдалитьЛицензию</CommandName>
+						<ExtendedTooltip name="СписокЛицензийУдалитьЛицензиюРасширеннаяПодсказка" id="156"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокЛицензийРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокЛицензийСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>СписокЛицензий</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокЛицензийСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокЛицензийСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокЛицензийСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>СписокЛицензий</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<HorizontalLocation>Left</HorizontalLocation>
+				<ContextMenu name="СписокЛицензийСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокЛицензийСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокЛицензийУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>СписокЛицензий</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокЛицензийУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокЛицензийУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">СписокЛицензийПередНачаломДобавления</Event>
+				<Event name="OnActivateRow">СписокЛицензийПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="СписокЛицензийНомерСтроки" id="14">
+					<DataPath>Объект.СписокЛицензий.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокЛицензийНомерСтрокиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СписокЛицензийНомерСтрокиРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<InputField name="СписокЛицензийНомерЛицензии" id="17">
+					<DataPath>Объект.СписокЛицензий.НомерЛицензии</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокЛицензийНомерЛицензииКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СписокЛицензийНомерЛицензииРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="СписокЛицензийОписание" id="20">
+					<DataPath>Объект.СписокЛицензий.Описание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокЛицензийОписаниеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокЛицензийОписаниеРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="СписокЛицензийКоличествоЛицензий" id="80">
+					<DataPath>Объект.СписокЛицензий.КоличествоЛицензий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокЛицензийКоличествоЛицензийКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="СписокЛицензийКоличествоЛицензийРасширеннаяПодсказка" id="82"/>
+				</InputField>
+				<InputField name="СписокЛицензийПинКод" id="23">
+					<DataPath>Объект.СписокЛицензий.ПинКод</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокЛицензийПинКодКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокЛицензийПинКодРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<CheckBoxField name="СписокЛицензийАктивна" id="77">
+					<DataPath>Объект.СписокЛицензий.Активна</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокЛицензийАктивнаКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="СписокЛицензийАктивнаРасширеннаяПодсказка" id="79"/>
+				</CheckBoxField>
+				<InputField name="СписокЛицензийДатаАктивации" id="56">
+					<DataPath>Объект.СписокЛицензий.ДатаАктивации</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокЛицензийДатаАктивацииКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="СписокЛицензийДатаАктивацииРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="СписокЛицензийРегистрационныйНомер" id="59">
+					<DataPath>Объект.СписокЛицензий.РегистрационныйНомер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокЛицензийРегистрационныйНомерКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="СписокЛицензийРегистрационныйНомерРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="СписокЛицензийКодПродукта" id="62">
+					<DataPath>Объект.СписокЛицензий.КодПродукта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокЛицензийКодПродуктаКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="СписокЛицензийКодПродуктаРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<InputField name="СписокЛицензийИмяФайлаЛицензии" id="65">
+					<DataPath>Объект.СписокЛицензий.ИмяФайлаЛицензии</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокЛицензийИмяФайлаЛицензииКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="СписокЛицензийИмяФайлаЛицензииРасширеннаяПодсказка" id="67"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаПодробно" id="83">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подробно</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подробно</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодробноРасширеннаяПодсказка" id="84"/>
+			<ChildItems>
+				<Pages name="ГруппаСтраницыИнформация" id="115">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страницы информация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страницы информация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<PagesRepresentation>TabsOnTop</PagesRepresentation>
+					<ExtendedTooltip name="ГруппаСтраницыИнформацияРасширеннаяПодсказка" id="116"/>
+					<ChildItems>
+						<Page name="ГруппаИнфо" id="122">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Информация</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа инфо</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаИнфоРасширеннаяПодсказка" id="123"/>
+							<ChildItems>
+								<InputField name="СписокЛицензийОписание1" id="142">
+									<DataPath>Items.СписокЛицензий.CurrentData.Описание</DataPath>
+									<ContextMenu name="СписокЛицензийОписание1КонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="СписокЛицензийОписание1РасширеннаяПодсказка" id="144"/>
+								</InputField>
+								<InputField name="СписокЛицензийКоличествоЛицензий1" id="124">
+									<DataPath>Items.СписокЛицензий.CurrentData.КоличествоЛицензий</DataPath>
+									<ContextMenu name="СписокЛицензийКоличествоЛицензий1КонтекстноеМеню" id="125"/>
+									<ExtendedTooltip name="СписокЛицензийКоличествоЛицензий1РасширеннаяПодсказка" id="126"/>
+								</InputField>
+								<InputField name="СписокЛицензийНомерЛицензии1" id="145">
+									<DataPath>Items.СписокЛицензий.CurrentData.НомерЛицензии</DataPath>
+									<ContextMenu name="СписокЛицензийНомерЛицензии1КонтекстноеМеню" id="146"/>
+									<ExtendedTooltip name="СписокЛицензийНомерЛицензии1РасширеннаяПодсказка" id="147"/>
+								</InputField>
+								<InputField name="СписокЛицензийПинКод1" id="139">
+									<DataPath>Items.СписокЛицензий.CurrentData.ПинКод</DataPath>
+									<ContextMenu name="СписокЛицензийПинКод1КонтекстноеМеню" id="140"/>
+									<ExtendedTooltip name="СписокЛицензийПинКод1РасширеннаяПодсказка" id="141"/>
+								</InputField>
+								<InputField name="СписокЛицензийКодПродукта1" id="133">
+									<DataPath>Items.СписокЛицензий.CurrentData.КодПродукта</DataPath>
+									<ContextMenu name="СписокЛицензийКодПродукта1КонтекстноеМеню" id="134"/>
+									<ExtendedTooltip name="СписокЛицензийКодПродукта1РасширеннаяПодсказка" id="135"/>
+								</InputField>
+								<CheckBoxField name="СписокЛицензийАктивна1" id="127">
+									<DataPath>Items.СписокЛицензий.CurrentData.Активна</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СписокЛицензийАктивна1КонтекстноеМеню" id="128"/>
+									<ExtendedTooltip name="СписокЛицензийАктивна1РасширеннаяПодсказка" id="129"/>
+								</CheckBoxField>
+								<InputField name="СписокЛицензийРегистрационныйНомер1" id="136">
+									<DataPath>Items.СписокЛицензий.CurrentData.РегистрационныйНомер</DataPath>
+									<ContextMenu name="СписокЛицензийРегистрационныйНомер1КонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="СписокЛицензийРегистрационныйНомер1РасширеннаяПодсказка" id="138"/>
+								</InputField>
+								<InputField name="СписокЛицензийИмяФайлаЛицензии1" id="130">
+									<DataPath>Items.СписокЛицензий.CurrentData.ИмяФайлаЛицензии</DataPath>
+									<ContextMenu name="СписокЛицензийИмяФайлаЛицензии1КонтекстноеМеню" id="131"/>
+									<ExtendedTooltip name="СписокЛицензийИмяФайлаЛицензии1РасширеннаяПодсказка" id="132"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+						<Page name="ГруппаДанныеАктивации" id="117">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Данные активации</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные активации</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаДанныеАктивацииРасширеннаяПодсказка" id="118"/>
+							<ChildItems>
+								<InputField name="СписокЛицензийФамилия" id="85">
+									<DataPath>Items.СписокЛицензий.CurrentData.Фамилия</DataPath>
+									<ContextMenu name="СписокЛицензийФамилияКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="СписокЛицензийФамилияРасширеннаяПодсказка" id="87"/>
+								</InputField>
+								<InputField name="СписокЛицензийИмя" id="88">
+									<DataPath>Items.СписокЛицензий.CurrentData.Имя</DataPath>
+									<ContextMenu name="СписокЛицензийИмяКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="СписокЛицензийИмяРасширеннаяПодсказка" id="90"/>
+								</InputField>
+								<InputField name="СписокЛицензийОтчество" id="91">
+									<DataPath>Items.СписокЛицензий.CurrentData.Отчество</DataPath>
+									<ContextMenu name="СписокЛицензийОтчествоКонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="СписокЛицензийОтчествоРасширеннаяПодсказка" id="93"/>
+								</InputField>
+								<InputField name="СписокЛицензийEMail" id="94">
+									<DataPath>Items.СписокЛицензий.CurrentData.EMail</DataPath>
+									<ContextMenu name="СписокЛицензийEMailКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="СписокЛицензийEMailРасширеннаяПодсказка" id="96"/>
+								</InputField>
+								<InputField name="СписокЛицензийКомпания" id="97">
+									<DataPath>Items.СписокЛицензий.CurrentData.Компания</DataPath>
+									<ContextMenu name="СписокЛицензийКомпанияКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="СписокЛицензийКомпанияРасширеннаяПодсказка" id="99"/>
+								</InputField>
+								<InputField name="СписокЛицензийСтрана" id="100">
+									<DataPath>Items.СписокЛицензий.CurrentData.Страна</DataPath>
+									<ContextMenu name="СписокЛицензийСтранаКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="СписокЛицензийСтранаРасширеннаяПодсказка" id="102"/>
+								</InputField>
+								<InputField name="СписокЛицензийРегион" id="161">
+									<DataPath>Items.СписокЛицензий.CurrentData.Регион</DataPath>
+									<ContextMenu name="СписокЛицензийРегионКонтекстноеМеню" id="162"/>
+									<ExtendedTooltip name="СписокЛицензийРегионРасширеннаяПодсказка" id="163"/>
+								</InputField>
+								<InputField name="СписокЛицензийИндекс" id="103">
+									<DataPath>Items.СписокЛицензий.CurrentData.Индекс</DataPath>
+									<ContextMenu name="СписокЛицензийИндексКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="СписокЛицензийИндексРасширеннаяПодсказка" id="105"/>
+								</InputField>
+								<InputField name="СписокЛицензийРайон" id="164">
+									<DataPath>Items.СписокЛицензий.CurrentData.Район</DataPath>
+									<ContextMenu name="СписокЛицензийРайонКонтекстноеМеню" id="165"/>
+									<ExtendedTooltip name="СписокЛицензийРайонРасширеннаяПодсказка" id="166"/>
+								</InputField>
+								<InputField name="СписокЛицензийГород" id="106">
+									<DataPath>Items.СписокЛицензий.CurrentData.Город</DataPath>
+									<ContextMenu name="СписокЛицензийГородКонтекстноеМеню" id="107"/>
+									<ExtendedTooltip name="СписокЛицензийГородРасширеннаяПодсказка" id="108"/>
+								</InputField>
+								<InputField name="СписокЛицензийУлица" id="109">
+									<DataPath>Items.СписокЛицензий.CurrentData.Улица</DataPath>
+									<ContextMenu name="СписокЛицензийУлицаКонтекстноеМеню" id="110"/>
+									<ExtendedTooltip name="СписокЛицензийУлицаРасширеннаяПодсказка" id="111"/>
+								</InputField>
+								<InputField name="СписокЛицензийДом" id="112">
+									<DataPath>Items.СписокЛицензий.CurrentData.Дом</DataPath>
+									<ContextMenu name="СписокЛицензийДомКонтекстноеМеню" id="113"/>
+									<ExtendedTooltip name="СписокЛицензийДомРасширеннаяПодсказка" id="114"/>
+								</InputField>
+								<InputField name="СписокЛицензийСтроение" id="170">
+									<DataPath>Items.СписокЛицензий.CurrentData.Строение</DataPath>
+									<ContextMenu name="СписокЛицензийСтроениеКонтекстноеМеню" id="171"/>
+									<ExtendedTooltip name="СписокЛицензийСтроениеРасширеннаяПодсказка" id="172"/>
+								</InputField>
+								<InputField name="СписокЛицензийКвартира" id="167">
+									<DataPath>Items.СписокЛицензий.CurrentData.Квартира</DataPath>
+									<ContextMenu name="СписокЛицензийКвартираКонтекстноеМеню" id="168"/>
+									<ExtendedTooltip name="СписокЛицензийКвартираРасширеннаяПодсказка" id="169"/>
+								</InputField>
+								<InputField name="СписокЛицензийДатаАктивации1" id="119">
+									<DataPath>Items.СписокЛицензий.CurrentData.ДатаАктивации</DataPath>
+									<ContextMenu name="СписокЛицензийДатаАктивации1КонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="СписокЛицензийДатаАктивации1РасширеннаяПодсказка" id="121"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+						<Page name="ГруппаДругое" id="148">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Другое</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа другое</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаДругоеРасширеннаяПодсказка" id="149"/>
+							<ChildItems>
+								<InputField name="СписокЛицензийТекстоваяИнформация" id="150">
+									<DataPath>Items.СписокЛицензий.CurrentData.ТекстоваяИнформация</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="СписокЛицензийТекстоваяИнформацияКонтекстноеМеню" id="151"/>
+									<ExtendedTooltip name="СписокЛицензийТекстоваяИнформацияРасширеннаяПодсказка" id="152"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УИ_ИнформацияОЛицензиях1С</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьСписокЛицензий" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить список лицензий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить список лицензий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьСписокЛицензий</Action>
+		</Command>
+		<Command name="ПолучитьПолнуюИнформациюОЛицензии" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить полную информацию о лицензиях</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить полную информацию о лицензии</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьПолнуюИнформациюОЛицензии</Action>
+		</Command>
+		<Command name="ПроверкаВалидностиЛицензий" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка валидности лицензий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка валидности лицензий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверкаВалидностиЛицензий</Action>
+		</Command>
+		<Command name="ПовторнаяАктивацияЛицензии" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повторная активация лицензии</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повторная активация лицензии</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПовторнаяАктивацияЛицензии</Action>
+		</Command>
+		<Command name="УдалитьЛицензию" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить лицензию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить лицензию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьЛицензию</Action>
+		</Command>
+		<Command name="АктивироватьЛицензию" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Активировать лицензию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Активировать лицензию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АктивироватьЛицензию</Action>
+		</Command>
+	</Commands>
+</Form>

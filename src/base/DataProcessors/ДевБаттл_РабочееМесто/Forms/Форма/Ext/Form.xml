@@ -1,0 +1,1211 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Контрольный пульт ведущего</v8:content>
+		</v8:item>
+	</Title>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНастройкиИгры" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки игры</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont faceName="Lab Grotesque K" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки игры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="ГруппаНастройкиИгрыРасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<RadioButtonField name="РежимИгры" id="105">
+					<DataPath>РежимИгры</DataPath>
+					<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<RadioButtonType>Tumbler</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:string">Дуэль</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:string">Мультиплеер</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<ContextMenu name="РежимИгрыКонтекстноеМеню" id="106"/>
+					<ExtendedTooltip name="РежимИгрыРасширеннаяПодсказка" id="107"/>
+					<Events>
+						<Event name="OnChange">РежимИгрыПриИзменении</Event>
+					</Events>
+				</RadioButtonField>
+				<InputField name="КоличествоИгроков" id="108">
+					<DataPath>КоличествоИгроков</DataPath>
+					<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<SpinButton>true</SpinButton>
+					<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<ContextMenu name="КоличествоИгроковКонтекстноеМеню" id="109"/>
+					<ExtendedTooltip name="КоличествоИгроковРасширеннаяПодсказка" id="110"/>
+				</InputField>
+				<UsualGroup name="ГруппаКоличествоЗадач" id="92">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество задач</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа количество задач</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаКоличествоЗадачРасширеннаяПодсказка" id="93"/>
+					<ChildItems>
+						<InputField name="КоличествоПростых" id="94">
+							<DataPath>КоличествоПростых</DataPath>
+							<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Width>2</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<ContextMenu name="КоличествоПростыхКонтекстноеМеню" id="95"/>
+							<ExtendedTooltip name="КоличествоПростыхРасширеннаяПодсказка" id="96"/>
+						</InputField>
+						<InputField name="КоличествоСредних" id="97">
+							<DataPath>КоличествоСредних</DataPath>
+							<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Width>2</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<ContextMenu name="КоличествоСреднихКонтекстноеМеню" id="98"/>
+							<ExtendedTooltip name="КоличествоСреднихРасширеннаяПодсказка" id="99"/>
+						</InputField>
+						<InputField name="КоличествоСложных" id="100">
+							<DataPath>КоличествоСложных</DataPath>
+							<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Width>2</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<ContextMenu name="КоличествоСложныхКонтекстноеМеню" id="101"/>
+							<ExtendedTooltip name="КоличествоСложныхРасширеннаяПодсказка" id="102"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВремяНаЗадачу" id="86">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка времени</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа время на задачу</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаВремяНаЗадачуРасширеннаяПодсказка" id="87"/>
+					<ChildItems>
+						<InputField name="ВремяНаЗадачу" id="5">
+							<DataPath>ВремяНаЗадачу</DataPath>
+							<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<Width>5</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<SpinButton>true</SpinButton>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=mm:ss</v8:content>
+								</v8:item>
+							</EditFormat>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<ContextMenu name="ВремяНаЗадачуКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ВремяНаЗадачуРасширеннаяПодсказка" id="7"/>
+						</InputField>
+						<InputField name="ОжиданиеПервыйИгрок" id="11">
+							<DataPath>ОжиданиеПервыйИгрок</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ознакомиться с задачей(сек)</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<ContextMenu name="ОжиданиеПервыйИгрокКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ОжиданиеПервыйИгрокРасширеннаяПодсказка" id="13"/>
+						</InputField>
+						<InputField name="ОжиданиеВторойИгрок" id="8">
+							<DataPath>ОжиданиеВторойИгрок</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ознакомиться второй раз (сек)</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<ContextMenu name="ОжиданиеВторойИгрокКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ОжиданиеВторойИгрокРасширеннаяПодсказка" id="10"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОзнакомление" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время на ознакомление (сек)</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont faceName="Lab Grotesque K" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ознакомление</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<ExtendedTooltip name="ГруппаОзнакомлениеРасширеннаяПодсказка" id="15"/>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИгра" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Игра</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа игра</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИграРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЗадачи" id="132">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа задачи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа задачи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЗадачиРасширеннаяПодсказка" id="133"/>
+					<ChildItems>
+						<Table name="Задания" id="21">
+							<Representation>List</Representation>
+							<TitleLocation>Top</TitleLocation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Задания</DataPath>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Задания</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЗаданияКонтекстноеМеню" id="22"/>
+							<AutoCommandBar name="ЗаданияКоманднаяПанель" id="23">
+								<ChildItems>
+									<Button name="ЗаданияЗаполнитьЗадачи" id="103">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗаполнитьЗадачи</CommandName>
+										<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+										<ExtendedTooltip name="ЗаданияЗаполнитьЗадачиРасширеннаяПодсказка" id="104"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ЗаданияРасширеннаяПодсказка" id="24"/>
+							<SearchStringAddition name="ЗаданияСтрокаПоиска" id="25">
+								<AdditionSource>
+									<Item>Задания</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаданияСтрокаПоискаКонтекстноеМеню" id="26"/>
+								<ExtendedTooltip name="ЗаданияСтрокаПоискаРасширеннаяПодсказка" id="27"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗаданияСостояниеПросмотра" id="28">
+								<AdditionSource>
+									<Item>Задания</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаданияСостояниеПросмотраКонтекстноеМеню" id="29"/>
+								<ExtendedTooltip name="ЗаданияСостояниеПросмотраРасширеннаяПодсказка" id="30"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗаданияУправлениеПоиском" id="31">
+								<AdditionSource>
+									<Item>Задания</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаданияУправлениеПоискомКонтекстноеМеню" id="32"/>
+								<ExtendedTooltip name="ЗаданияУправлениеПоискомРасширеннаяПодсказка" id="33"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ЗаданияЗадача" id="37">
+									<DataPath>Задания.Задача</DataPath>
+									<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<EditMode>EnterOnInput</EditMode>
+									<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<ContextMenu name="ЗаданияЗадачаКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="ЗаданияЗадачаРасширеннаяПодсказка" id="39"/>
+								</InputField>
+								<InputField name="ЗаданияЗадачаБаллы" id="113">
+									<DataPath>Задания.Задача.Баллы</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сложность</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<EditMode>EnterOnInput</EditMode>
+									<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<ContextMenu name="ЗаданияЗадачаБаллыКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="ЗаданияЗадачаБаллыРасширеннаяПодсказка" id="115"/>
+								</InputField>
+								<InputField name="ЗаданияВремяНаЗадачу" id="40">
+									<DataPath>Задания.ВремяНаЗадачу</DataPath>
+									<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<EditMode>EnterOnInput</EditMode>
+									<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<ContextMenu name="ЗаданияВремяНаЗадачуКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ЗаданияВремяНаЗадачуРасширеннаяПодсказка" id="42"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Button name="НоваяИгра" id="1">
+							<Type>UsualButton</Type>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>1</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>1</MaxHeight>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.НоваяИгра</CommandName>
+							<BackColor>#F6F6F6</BackColor>
+							<Font faceName="Lab Grotesque K" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создать новую игру</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="НоваяИграРасширеннаяПодсказка" id="2"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРезультаты" id="134">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа результаты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа результаты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРезультатыРасширеннаяПодсказка" id="135"/>
+					<ChildItems>
+						<SpreadSheetDocumentField name="РезультатыИгроков" id="62">
+							<DataPath>РезультатыИгроков</DataPath>
+							<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Width>65</Width>
+							<ContextMenu name="РезультатыИгроковКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="РезультатыИгроковРасширеннаяПодсказка" id="64"/>
+						</SpreadSheetDocumentField>
+						<Button name="ЗакончитьИгру" id="70">
+							<Type>UsualButton</Type>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>1</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>1</MaxHeight>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<CommandName>Form.Command.ЗакончитьИгру</CommandName>
+							<BackColor>#FFDDD6</BackColor>
+							<Font faceName="Lab Grotesque K" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<ExtendedTooltip name="ЗакончитьИгруРасширеннаяПодсказка" id="71"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСостояниеИгры" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние игры</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont faceName="Lab Grotesque K" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа состояние игры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаСостояниеИгрыРасширеннаяПодсказка" id="47"/>
+			<ChildItems>
+				<LabelField name="ТекущийРаунд" id="48">
+					<DataPath>ТекущийРаунд</DataPath>
+					<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<ContextMenu name="ТекущийРаундКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ТекущийРаундРасширеннаяПодсказка" id="50"/>
+				</LabelField>
+				<LabelField name="ТекущийИгрок" id="51">
+					<DataPath>ТекущийИгрок</DataPath>
+					<TitleFont faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<ContextMenu name="ТекущийИгрокКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ТекущийИгрокРасширеннаяПодсказка" id="53"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаУправление" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont faceName="Lab Grotesque K" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа управление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаУправлениеРасширеннаяПодсказка" id="55"/>
+			<ChildItems>
+				<Button name="НовыйРаунд" id="56">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.НовыйРаунд</CommandName>
+					<BackColor>#F6F6F6</BackColor>
+					<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<ExtendedTooltip name="НовыйРаундРасширеннаяПодсказка" id="57"/>
+				</Button>
+				<Button name="Игрок1" id="58">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗапуститьИгрок1</CommandName>
+					<BackColor>#F6F6F6</BackColor>
+					<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<ExtendedTooltip name="Игрок1РасширеннаяПодсказка" id="59"/>
+				</Button>
+				<Button name="Игрок2" id="60">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗапуститьИгрок2</CommandName>
+					<BackColor>#F6F6F6</BackColor>
+					<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<ExtendedTooltip name="Игрок2РасширеннаяПодсказка" id="61"/>
+				</Button>
+				<Button name="НачатьИспытание" id="111">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.НачатьИспытание</CommandName>
+					<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<ExtendedTooltip name="НачатьИспытаниеРасширеннаяПодсказка" id="112"/>
+				</Button>
+				<Button name="ФинальныйРаунд" id="90">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ФинальныйРаунд</CommandName>
+					<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<ExtendedTooltip name="ФинальныйРаундРасширеннаяПодсказка" id="91"/>
+				</Button>
+				<Button name="ФинальноеИспытание" id="116">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.НачатьИспытание</CommandName>
+					<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Финальное испытание</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ФинальноеИспытаниеРасширеннаяПодсказка" id="117"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРасширеноеУправление" id="72">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширеное управление</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont faceName="Lab Grotesque K" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа расширеное управление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ExtendedTooltip name="ГруппаРасширеноеУправлениеРасширеннаяПодсказка" id="73"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРасширенноеИгрок1" id="76">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расширенное игрок1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расширенное игрок1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРасширенноеИгрок1РасширеннаяПодсказка" id="77"/>
+					<ChildItems>
+						<Button name="ЗавершитьРаундПройденоИгрок1" id="74">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗавершитьРаундПройденоИгрок1</CommandName>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<ExtendedTooltip name="ЗавершитьРаундПройденоИгрок1РасширеннаяПодсказка" id="75"/>
+						</Button>
+						<Button name="ЗавершитьРаундПроваленоИгрок1" id="82">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗавершитьРаундПроваленоИгрок1</CommandName>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Провалено (Игрок1)</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ЗавершитьРаундПроваленоИгрок1РасширеннаяПодсказка" id="83"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРасширенноеИгрок2" id="78">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расширенное игрок1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расширенное игрок1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРасширенноеИгрок2РасширеннаяПодсказка" id="79"/>
+					<ChildItems>
+						<Button name="ЗавершитьРаундПройденоИгрок2" id="80">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗавершитьРаундПройденоИгрок2</CommandName>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<ExtendedTooltip name="ЗавершитьРаундПройденоИгрок2РасширеннаяПодсказка" id="81"/>
+						</Button>
+						<Button name="ЗавершитьРаундПроваленоИгрок2" id="84">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗавершитьРаундПроваленоИгрок2</CommandName>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Провалено (Игрок2)</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ЗавершитьРаундПроваленоИгрок2РасширеннаяПодсказка" id="85"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРасширеннойВсеИгроки" id="118">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расширенной все игроки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расширенной все игроки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРасширеннойВсеИгрокиРасширеннаяПодсказка" id="119"/>
+					<ChildItems>
+						<Button name="ПобедилИгрок1" id="120">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗавершитьРаундПройденоИгрок1</CommandName>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Игрок 1</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПобедилИгрок1РасширеннаяПодсказка" id="121"/>
+						</Button>
+						<Button name="ПобедилИгрок2" id="122">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗавершитьРаундПройденоИгрок2</CommandName>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Игрок 2</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПобедилИгрок2РасширеннаяПодсказка" id="123"/>
+						</Button>
+						<Button name="ПобедилИгрок3" id="124">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗавершитьРаундПройденоИгрок3</CommandName>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Игрок 3</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПобедилИгрок3РасширеннаяПодсказка" id="125"/>
+						</Button>
+						<Button name="ПобедилИгрок4" id="126">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗавершитьРаундПройденоИгрок4</CommandName>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Игрок 4</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПобедилИгрок4РасширеннаяПодсказка" id="127"/>
+						</Button>
+						<Button name="ПобедилИгрок5" id="128">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗавершитьРаундПройденоИгрок5</CommandName>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Игрок 5</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПобедилИгрок5РасширеннаяПодсказка" id="129"/>
+						</Button>
+						<Button name="ПобедилИгрок6" id="130">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗавершитьРаундПройденоИгрок6</CommandName>
+							<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Игрок 6</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПобедилИгрок6РасширеннаяПодсказка" id="131"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<Button name="УстановитьРаунд" id="88">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.УстановитьРаунд</CommandName>
+					<Font faceName="Lab Grotesque K" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<ExtendedTooltip name="УстановитьРаундРасширеннаяПодсказка" id="89"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДевБаттл_РабочееМесто</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ВремяНаЗадачу" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время на задачу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Time</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОжиданиеПервыйИгрок" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ознакомление с задачей, первый раз (сек)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОжиданиеВторойИгрок" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ознакомление с задачей, второй раз (сек)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВсегоЗадач" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего задач</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Задания" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Задача" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИТК_Задачи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВремяНаЗадачу" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время на задачу (сек)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТекущийРаунд" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Раунд</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийИгрок" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий игрок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатыИгроков" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результаты игроков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущееСостояние" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущее состояние</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПодсказкиВедущему" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсказки ведущему</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийВидИспытания" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий вид испытания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ДевБаттл_СостояниеИгрока</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПростых" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Простых</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоСредних" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средних</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоСложных" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сложных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимИгры" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим игры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоИгроков" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество игроков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НоваяИгра" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новая игра</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новая игра</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НоваяИгра</Action>
+		</Command>
+		<Command name="НовыйРаунд" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый раунд</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый раунд</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НовыйРаунд</Action>
+		</Command>
+		<Command name="ЗапуститьИгрок1" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Игрок 1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить игрок1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапуститьИгрок1</Action>
+		</Command>
+		<Command name="ЗапуститьИгрок2" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Игрок 2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить игрок2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапуститьИгрок2</Action>
+		</Command>
+		<Command name="ЗакончитьИгру" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закончить игру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закончить игру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗакончитьИгру</Action>
+		</Command>
+		<Command name="ЗавершитьРаундПройденоИгрок1" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнено (Игрок1)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить раунд пройдено игрок1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗавершитьРаундПройденоИгрок1</Action>
+		</Command>
+		<Command name="ЗавершитьРаундПройденоИгрок2" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнено (Игрок2)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить раунд пройдено игрок2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗавершитьРаундПройденоИгрок2</Action>
+		</Command>
+		<Command name="ЗавершитьРаундПроваленоИгрок1" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить раунд провалено игрок1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить раунд провалено игрок1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗавершитьРаундПроваленоИгрок1</Action>
+		</Command>
+		<Command name="ЗавершитьРаундПроваленоИгрок2" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить раунд провалено игрок2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить раунд провалено игрок2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗавершитьРаундПроваленоИгрок2</Action>
+		</Command>
+		<Command name="УстановитьРаунд" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить раунд</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ручная установка конкретного раунда</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьРаунд</Action>
+		</Command>
+		<Command name="ФинальныйРаунд" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Финальный раунд</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Финальный раунд</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ФинальныйРаунд</Action>
+		</Command>
+		<Command name="ЗаполнитьЗадачи" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить задачи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьЗадачи</Action>
+		</Command>
+		<Command name="НачатьИспытание" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать испытание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать испытание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НачатьИспытание</Action>
+		</Command>
+		<Command name="ЗавершитьРаундПройденоИгрок3" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнено (Игрок2)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить раунд пройдено игрок2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗавершитьРаундПройденоИгрок3</Action>
+		</Command>
+		<Command name="ЗавершитьРаундПройденоИгрок4" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнено (Игрок2)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить раунд пройдено игрок2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗавершитьРаундПройденоИгрок4</Action>
+		</Command>
+		<Command name="ЗавершитьРаундПройденоИгрок5" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнено (Игрок2)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить раунд пройдено игрок2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗавершитьРаундПройденоИгрок5</Action>
+		</Command>
+		<Command name="ЗавершитьРаундПройденоИгрок6" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнено (Игрок2)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить раунд пройдено игрок2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗавершитьРаундПройденоИгрок6</Action>
+		</Command>
+	</Commands>
+</Form>

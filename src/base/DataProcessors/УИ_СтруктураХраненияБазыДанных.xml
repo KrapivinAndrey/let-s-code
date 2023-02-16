@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<DataProcessor uuid="08b7ef44-2942-11ea-1e8a-e86a6452d1f2">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.УИ_СтруктураХраненияБазыДанных" category="Object">
+				<xr:TypeId>08b7ef3a-2942-11ea-1e8a-e86a6452d1f2</xr:TypeId>
+				<xr:ValueId>08b7ef3b-2942-11ea-1e8a-e86a6452d1f2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.УИ_СтруктураХраненияБазыДанных" category="Manager">
+				<xr:TypeId>08b7ef3c-2942-11ea-1e8a-e86a6452d1f2</xr:TypeId>
+				<xr:ValueId>08b7ef3d-2942-11ea-1e8a-e86a6452d1f2</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>УИ_СтруктураХраненияБазыДанных</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>DB storage structure info</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура хранения базы данных [УИ]</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.УИ_СтруктураХраненияБазыДанных.Form.ФормаУправляемая</DefaultForm>
+			<AuxiliaryForm>DataProcessor.УИ_СтруктураХраненияБазыДанных.Form.ФормаУправляемая</AuxiliaryForm>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура хранения базы данных</v8:content>
+				</v8:item>
+			</ExtendedPresentation>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр имен таблиц и их взаимосвязей с объектами метаданных.</v8:content>
+				</v8:item>
+			</Explanation>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаУправляемая</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

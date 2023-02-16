@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПрименить" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Применить</CommandName>
+				<ExtendedTooltip name="ФормаПрименитьРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="4"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаРедакторКода" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактор кода</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаРедакторКодаРасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<InputField name="РедакторКода1С" id="5">
+					<DataPath>РедакторКода1С</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="РедакторКода1СКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="РедакторКода1СРасширеннаяПодсказка" id="7"/>
+					<Events>
+						<Event name="OnChange">РедакторКода1СПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="РазмерШрифта" id="47">
+					<DataPath>РазмерШрифта</DataPath>
+					<ClearButton>true</ClearButton>
+					<SpinButton>true</SpinButton>
+					<MinValue xsi:type="xs:decimal">0</MinValue>
+					<MaxValue xsi:type="xs:decimal">128</MaxValue>
+					<ContextMenu name="РазмерШрифтаКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="РазмерШрифтаРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<UsualGroup name="ГруппаРедакторКодаMonaco" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа редактор кода monaco</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРедакторКодаMonacoРасширеннаяПодсказка" id="12"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРедакторКодаMonacoОсновныеНастройки" id="45">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа редактор кода monaco основные настройки</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРедакторКодаMonacoОсновныеНастройкиРасширеннаяПодсказка" id="46"/>
+							<ChildItems>
+								<InputField name="ТемаРедактораMonaco" id="8">
+									<DataPath>ТемаРедактораMonaco</DataPath>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ContextMenu name="ТемаРедактораMonacoКонтекстноеМеню" id="9"/>
+									<ExtendedTooltip name="ТемаРедактораMonacoРасширеннаяПодсказка" id="10"/>
+								</InputField>
+								<InputField name="ЯзыкСинтаксисаРедактораMonaco" id="13">
+									<DataPath>ЯзыкСинтаксисаРедактораMonaco</DataPath>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ContextMenu name="ЯзыкСинтаксисаРедактораMonacoКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ЯзыкСинтаксисаРедактораMonacoРасширеннаяПодсказка" id="15"/>
+								</InputField>
+								<CheckBoxField name="ИспользоватьКартуКода" id="16">
+									<DataPath>ИспользоватьКартуКода</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Карта кода</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьКартуКодаКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ИспользоватьКартуКодаРасширеннаяПодсказка" id="18"/>
+								</CheckBoxField>
+								<CheckBoxField name="СкрытьНомераСтрок" id="19">
+									<DataPath>СкрытьНомераСтрок</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СкрытьНомераСтрокКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="СкрытьНомераСтрокРасширеннаяПодсказка" id="21"/>
+								</CheckBoxField>
+								<CheckBoxField name="ОтображатьПробелыИТабуляции" id="53">
+									<DataPath>ОтображатьПробелыИТабуляции</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОтображатьПробелыИТабуляцииКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="ОтображатьПробелыИТабуляцииРасширеннаяПодсказка" id="55"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ВысотаСтрок" id="50">
+							<DataPath>ВысотаСтрок</DataPath>
+							<ClearButton>true</ClearButton>
+							<SpinButton>true</SpinButton>
+							<ContextMenu name="ВысотаСтрокКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ВысотаСтрокРасширеннаяПодсказка" id="52"/>
+						</InputField>
+						<Table name="КаталогиИсходныхФайловКонфигурации" id="24">
+							<Representation>List</Representation>
+							<TitleLocation>Top</TitleLocation>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>КаталогиИсходныхФайловКонфигурации</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Каталоги исходных файлов конфигурации</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Нужно указать, чтобы работали подсказки по экспортным методам модулей в вредакторе Monaco</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="КаталогиИсходныхФайловКонфигурацииКонтекстноеМеню" id="26"/>
+							<AutoCommandBar name="КаталогиИсходныхФайловКонфигурацииКоманднаяПанель" id="25">
+								<ChildItems>
+									<Button name="КаталогиИсходныхФайловКонфигурацииСохранитьМодулиКонфигурацииВФайлы" id="43">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СохранитьМодулиКонфигурацииВФайлы</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="КаталогиИсходныхФайловКонфигурацииСохранитьМодулиКонфигурацииВФайлыРасширеннаяПодсказка" id="44"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="КаталогиИсходныхФайловКонфигурацииРасширеннаяПодсказка" id="27"/>
+							<SearchStringAddition name="КаталогиИсходныхФайловКонфигурацииСтрокаПоиска" id="28">
+								<AdditionSource>
+									<Item>КаталогиИсходныхФайловКонфигурации</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КаталогиИсходныхФайловКонфигурацииСтрокаПоискаКонтекстноеМеню" id="29"/>
+								<ExtendedTooltip name="КаталогиИсходныхФайловКонфигурацииСтрокаПоискаРасширеннаяПодсказка" id="30"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КаталогиИсходныхФайловКонфигурацииСостояниеПросмотра" id="34">
+								<AdditionSource>
+									<Item>КаталогиИсходныхФайловКонфигурации</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КаталогиИсходныхФайловКонфигурацииСостояниеПросмотраКонтекстноеМеню" id="35"/>
+								<ExtendedTooltip name="КаталогиИсходныхФайловКонфигурацииСостояниеПросмотраРасширеннаяПодсказка" id="36"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КаталогиИсходныхФайловКонфигурацииУправлениеПоиском" id="31">
+								<AdditionSource>
+									<Item>КаталогиИсходныхФайловКонфигурации</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КаталогиИсходныхФайловКонфигурацииУправлениеПоискомКонтекстноеМеню" id="32"/>
+								<ExtendedTooltip name="КаталогиИсходныхФайловКонфигурацииУправлениеПоискомРасширеннаяПодсказка" id="33"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="КаталогиИсходныхФайловКонфигурацииИсточник" id="40">
+									<DataPath>КаталогиИсходныхФайловКонфигурации.Источник</DataPath>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ContextMenu name="КаталогиИсходныхФайловКонфигурацииИсточникКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="КаталогиИсходныхФайловКонфигурацииИсточникРасширеннаяПодсказка" id="42"/>
+								</InputField>
+								<InputField name="КаталогиИсходныхФайловКонфигурацииКаталог" id="37">
+									<DataPath>КаталогиИсходныхФайловКонфигурации.Каталог</DataPath>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="КаталогиИсходныхФайловКонфигурацииКаталогКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="КаталогиИсходныхФайловКонфигурацииКаталогРасширеннаяПодсказка" id="39"/>
+									<Events>
+										<Event name="StartChoice">КаталогиИсходныхФайловКонфигурацииКаталогНачалоВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="РедакторКода1С" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактор кода 1С</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ТемаРедактораMonaco" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тема</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ЯзыкСинтаксисаРедактораMonaco" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Язык синтаксиса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ИспользоватьКартуКода" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать карту кода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СкрытьНомераСтрок" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скрыть номера строк</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КаталогиИсходныхФайловКонфигурации" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталоги исходных файлов конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="Каталог" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Каталог</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Источник" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="РазмерШрифта" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер шрифта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ВысотаСтрок" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Высота строк</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ОтображатьПробелыИТабуляции" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать пробелы и табуляции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Применить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Применить</Action>
+		</Command>
+		<Command name="СохранитьМодулиКонфигурацииВФайлы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить модули конфигурации в файлы</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СохранитьМодулиКонфигурацииВФайлы</Action>
+		</Command>
+	</Commands>
+</Form>

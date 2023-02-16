@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСформировать" id="43">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Сформировать</CommandName>
+				<ExtendedTooltip name="ФормаСформироватьРасширеннаяПодсказка" id="44"/>
+			</Button>
+			<Button name="ФормаПараметры" id="67">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Параметры</CommandName>
+				<ExtendedTooltip name="ФормаПараметрыРасширеннаяПодсказка" id="68"/>
+			</Button>
+			<Popup name="ОбъектыГруппаОбъектыКСравнению" id="77">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Объекты добавленные к сравнению</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Объекты группа объекты к сравнению</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ОбъектыГруппаОбъектыКСравнениюРасширеннаяПодсказка" id="78"/>
+				<ChildItems>
+					<Button name="ОбъектыДобавитьРанееДобавленныеКСравнению" id="75">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДобавитьРанееДобавленныеКСравнению</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Добавить к списку</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ОбъектыДобавитьРанееДобавленныеКСравнениюРасширеннаяПодсказка" id="76"/>
+					</Button>
+					<Button name="ОбъектыОчиститьРанееДобавленныеКСравнению" id="79">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОчиститьРанееДобавленныеКСравнению</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Очистить</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ОбъектыОчиститьРанееДобавленныеКСравнениюРасширеннаяПодсказка" id="80"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПараметры" id="65">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="66"/>
+			<ChildItems>
+				<Table name="Объекты" id="14">
+					<Representation>List</Representation>
+					<Height>3</Height>
+					<Header>false</Header>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объекты</DataPath>
+					<RowPictureDataPath>Объекты.Picture</RowPictureDataPath>
+					<ContextMenu name="ОбъектыКонтекстноеМеню" id="15"/>
+					<AutoCommandBar name="ОбъектыКоманднаяПанель" id="16">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ОбъектыДобавить" id="51">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Объекты.StandardCommand.Add</CommandName>
+								<ExtendedTooltip name="ОбъектыДобавитьРасширеннаяПодсказка" id="52"/>
+							</Button>
+							<Button name="ОбъектыИзменить" id="53">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Объекты.StandardCommand.Change</CommandName>
+								<ExtendedTooltip name="ОбъектыИзменитьРасширеннаяПодсказка" id="54"/>
+							</Button>
+							<Button name="ОбъектыУдалить" id="55">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Объекты.StandardCommand.Delete</CommandName>
+								<ExtendedTooltip name="ОбъектыУдалитьРасширеннаяПодсказка" id="56"/>
+							</Button>
+							<Button name="ОбъектыПереместитьВверх" id="57">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Объекты.StandardCommand.MoveUp</CommandName>
+								<ExtendedTooltip name="ОбъектыПереместитьВверхРасширеннаяПодсказка" id="58"/>
+							</Button>
+							<Button name="ОбъектыПереместитьВниз" id="59">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Объекты.StandardCommand.MoveDown</CommandName>
+								<ExtendedTooltip name="ОбъектыПереместитьВнизРасширеннаяПодсказка" id="60"/>
+							</Button>
+							<Button name="ОбъектыСортироватьСписокПоВозрастанию" id="61">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Объекты.StandardCommand.SortListAsc</CommandName>
+								<ExtendedTooltip name="ОбъектыСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="62"/>
+							</Button>
+							<Button name="ОбъектыСортироватьСписокПоУбыванию" id="63">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Объекты.StandardCommand.SortListDesc</CommandName>
+								<ExtendedTooltip name="ОбъектыСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="64"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ОбъектыРасширеннаяПодсказка" id="17"/>
+					<SearchStringAddition name="ОбъектыСтрокаПоиска" id="18">
+						<AdditionSource>
+							<Item>Объекты</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОбъектыСтрокаПоискаКонтекстноеМеню" id="19"/>
+						<ExtendedTooltip name="ОбъектыСтрокаПоискаРасширеннаяПодсказка" id="20"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ОбъектыСостояниеПросмотра" id="21">
+						<AdditionSource>
+							<Item>Объекты</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОбъектыСостояниеПросмотраКонтекстноеМеню" id="22"/>
+						<ExtendedTooltip name="ОбъектыСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ОбъектыУправлениеПоиском" id="24">
+						<AdditionSource>
+							<Item>Объекты</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ОбъектыУправлениеПоискомКонтекстноеМеню" id="25"/>
+						<ExtendedTooltip name="ОбъектыУправлениеПоискомРасширеннаяПодсказка" id="26"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ОбъектыЗначение" id="27">
+							<DataPath>Объекты.Value</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОбъектыЗначениеКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="ОбъектыЗначениеРасширеннаяПодсказка" id="29"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<SpreadSheetDocumentField name="ТабличныйДокумент" id="72">
+			<DataPath>ТабличныйДокумент</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ТабличныйДокументКонтекстноеМеню" id="73"/>
+			<ExtendedTooltip name="ТабличныйДокументРасширеннаяПодсказка" id="74"/>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УИ_СравнениеОбъектов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Объекты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ТабличныйДокумент" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Табличный документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сформировать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="Параметры" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Параметры</Action>
+		</Command>
+		<Command name="ДобавитьРанееДобавленныеКСравнению" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить ранее добавленные к сравнению</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить ранее добавленные к сравнению</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.RestoreValues</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьРанееДобавленныеКСравнению</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОчиститьРанееДобавленныеКСравнению" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить ранее добавленные к сравнению</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить ранее добавленные к сравнению</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьРанееДобавленныеКСравнению</Action>
+		</Command>
+	</Commands>
+</Form>

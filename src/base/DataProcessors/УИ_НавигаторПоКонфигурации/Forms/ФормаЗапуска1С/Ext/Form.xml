@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Запуск сеанса 1С</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<ScalingMode>Compact</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ПараметрыЗапуска" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры запуска</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры запуска</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>50</Width>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ПараметрыЗапускаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="Сервер" id="3">
+					<DataPath>Сервер</DataPath>
+					<ContextMenu name="СерверКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="СерверРасширеннаяПодсказка" id="5"/>
+				</InputField>
+				<InputField name="БазаДанных" id="6">
+					<DataPath>БазаДанных</DataPath>
+					<ContextMenu name="БазаДанныхКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="БазаДанныхРасширеннаяПодсказка" id="8"/>
+				</InputField>
+				<InputField name="РежимЗапуска" id="17">
+					<DataPath>РежимЗапуска</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<TextEdit>false</TextEdit>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Конфигуратор</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Толстый клиент (обычное приложение)</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">2</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Толстый клиент (управляемое приложение)</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">3</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Тонкий клиент (управляемое приложение)</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">4</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="РежимЗапускаКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="РежимЗапускаРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ДопПараметры" id="9">
+					<DataPath>ДопПараметры</DataPath>
+					<ContextMenu name="ДопПараметрыКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ДопПараметрыРасширеннаяПодсказка" id="11"/>
+				</InputField>
+				<LabelDecoration name="Декорация1" id="23">
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="10"/>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="25"/>
+				</LabelDecoration>
+				<InputField name="Стартер1С" id="14">
+					<DataPath>Стартер1С</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полный путь к файлу 1cestart.exe (можно задать вручную)</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="Стартер1СКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="Стартер1СРасширеннаяПодсказка" id="16"/>
+					<Events>
+						<Event name="StartChoice">Стартер1СНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="СтрокаКоманды" id="20">
+					<DataPath>СтрокаКоманды</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результирующая строка команды запуска 1С</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ContextMenu name="СтрокаКомандыКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СтрокаКомандыРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<Button name="СформироватьСтрокуКоманды" id="29">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.СформироватьСтрокуКоманды</CommandName>
+					<ExtendedTooltip name="СформироватьСтрокуКомандыРасширеннаяПодсказка" id="30"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Декорация2" id="26">
+			<Font ref="style:NormalTextFont" kind="StyleItem" scale="20"/>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="28"/>
+		</LabelDecoration>
+		<Button name="Запустить1С" id="12">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Запустить1С</CommandName>
+			<ExtendedTooltip name="Запустить1СРасширеннаяПодсказка" id="13"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УИ_НавигаторПоКонфигурации</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Сервер" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер 1С</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="БазаДанных" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>База данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДопПараметры" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доп. параметры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Стартер1С" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стартер1С</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимЗапуска" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим запуска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтрокаКоманды" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка команды</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Запустить1С" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить1С</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить1С</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.BusinessProcessStart</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Запустить1С</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СформироватьСтрокуКоманды" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать строку команды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать строку команды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьСтрокуКоманды</Action>
+		</Command>
+	</Commands>
+</Form>

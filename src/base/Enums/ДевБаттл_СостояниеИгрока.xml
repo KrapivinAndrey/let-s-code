@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Enum uuid="b4cb59c5-ae10-4ee9-8a8d-5d9b5c2914bf">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ДевБаттл_СостояниеИгрока" category="Ref">
+				<xr:TypeId>acb49c28-5cd4-4997-b446-6471dbd0c732</xr:TypeId>
+				<xr:ValueId>64c0777e-47d0-4c8b-b4f9-962f0600a553</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ДевБаттл_СостояниеИгрока" category="Manager">
+				<xr:TypeId>41f89f0a-ef0b-4655-8029-3e3d2851850e</xr:TypeId>
+				<xr:ValueId>ed7699b1-8433-4b81-b2d9-26fbc7526e4d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ДевБаттл_СостояниеИгрока" category="List">
+				<xr:TypeId>ad3bb229-ef82-4155-8fff-9f9fc9dad28f</xr:TypeId>
+				<xr:ValueId>d062865d-a3fa-4fad-95af-5a3f93c7a3d9</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ДевБаттл_СостояниеИгрока</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние игрока</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="ede041e9-1050-4926-8125-6689bfee2b07">
+				<Properties>
+					<Name>НачалоИгры</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало игры</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7327bc2c-c29a-4128-8b08-7efdc9eed188">
+				<Properties>
+					<Name>НачалоРаунда</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало раунда</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2075dc35-66b0-4a13-811a-0e2423033c00">
+				<Properties>
+					<Name>ИспытаниеОдиночное</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Испытание (одиночное)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6d86c254-7d0b-4f90-9d8d-ac2d4388096f">
+				<Properties>
+					<Name>ИспытаниеОдновременное</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Испытание (одновременное)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Испытание выполняется одновременно всеми</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="43dda646-3d64-4f4a-aafe-f59bf72df56d">
+				<Properties>
+					<Name>РезультатИспытания</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат испытания</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="480658a1-b993-473a-a375-1725f21aae27">
+				<Properties>
+					<Name>КонецИгры</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конец игры</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d3460189-ec28-40d8-b90b-99771a7aea98">
+				<Properties>
+					<Name>РезультатИспытанияВыполнено</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат испытания(выполнено)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Устанавливается ведущим</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b91bc9ac-6b4f-43af-afe2-d1625f2ae2aa">
+				<Properties>
+					<Name>РезультатИспытанияПровалено</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат испытания(провалено)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Устанавливается ведущим</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

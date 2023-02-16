@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Пацанская цЫтата</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСостояние" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа состояние</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа состояние</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСостояниеРасширеннаяПодсказка" id="2"/>
+			<Events>
+				<Event name="OnCurrentPageChange">ГруппаСостояниеПриСменеСтраницы</Event>
+			</Events>
+			<ChildItems>
+				<Page name="СтраницаПравила" id="52">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница правила</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont faceName="Lab Grotesque K" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница правила</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаПравилаРасширеннаяПодсказка" id="53"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПравила" id="54">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Правила</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont faceName="Lab Grotesque K" height="18" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаПравилаРасширеннаяПодсказка" id="55"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация1" id="56">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<Font faceName="Lab Grotesque K" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="58"/>
+								</LabelDecoration>
+								<InputField name="ПравилаИгры" id="118">
+									<DataPath>ПравилаИгры</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>None</TitleLocation>
+									<Width>50</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<MultiLine>true</MultiLine>
+									<TextEdit>false</TextEdit>
+									<Font faceName="Lab Grotesque K" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<ContextMenu name="ПравилаИгрыКонтекстноеМеню" id="119"/>
+									<ExtendedTooltip name="ПравилаИгрыРасширеннаяПодсказка" id="120"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаНачалоРаунда" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подготовка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница начало раунда</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаНачалоРаундаРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОжидание" id="98">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ожидайте начала испытания...</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont faceName="Lab Grotesque K" height="18" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ожидание</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаОжиданиеРасширеннаяПодсказка" id="99"/>
+							<ChildItems>
+								<LabelField name="ТекущийРаунд" id="86">
+									<DataPath>ТекущийРаунд</DataPath>
+									<TitleFont faceName="Lab Grotesque K" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<Font faceName="Lab Grotesque K" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<ContextMenu name="ТекущийРаундКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="ТекущийРаундРасширеннаяПодсказка" id="88"/>
+								</LabelField>
+								<SpreadSheetDocumentField name="РезультатИспытаний" id="83">
+									<DataPath>РезультатИспытаний</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleFont faceName="Lab Grotesque K" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<TitleLocation>Top</TitleLocation>
+									<VerticalScrollBar>false</VerticalScrollBar>
+									<HorizontalScrollBar>false</HorizontalScrollBar>
+									<BorderColor>style:FormBackColor</BorderColor>
+									<ContextMenu name="РезультатИспытанийКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="РезультатИспытанийРасширеннаяПодсказка" id="85"/>
+								</SpreadSheetDocumentField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаИспытание" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Испытание</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница испытание</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаИспытаниеРасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗадача" id="24">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа задача</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа задача</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗадачаРасширеннаяПодсказка" id="25"/>
+							<ChildItems>
+								<HTMLDocumentField name="ПостановкаЗадачи" id="15">
+									<DataPath>ПостановкаЗадачи</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Задача</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont faceName="Lab Grotesque K" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<TitleLocation>Top</TitleLocation>
+									<ContextMenu name="ПостановкаЗадачиКонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="ПостановкаЗадачиРасширеннаяПодсказка" id="17"/>
+								</HTMLDocumentField>
+								<HTMLDocumentField name="ПротоколТестирования" id="18">
+									<DataPath>ПротоколТестирования</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тестирования</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont faceName="Lab Grotesque K" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<TitleLocation>Top</TitleLocation>
+									<ContextMenu name="ПротоколТестированияКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="ПротоколТестированияРасширеннаяПодсказка" id="20"/>
+								</HTMLDocumentField>
+								<TextDocumentField name="Отладка" id="115">
+									<DataPath>Отладка</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отладка</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont faceName="Lab Grotesque K" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<TitleLocation>Top</TitleLocation>
+									<MaxWidth>30</MaxWidth>
+									<Font faceName="Lab Grotesque K" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<ContextMenu name="ОтладкаКонтекстноеМеню" id="116"/>
+									<ExtendedTooltip name="ОтладкаРасширеннаяПодсказка" id="117"/>
+								</TextDocumentField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСередина" id="111">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа середина</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа середина</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСерединаРасширеннаяПодсказка" id="112"/>
+							<ChildItems>
+								<LabelField name="ТаймерСтрока" id="92">
+									<DataPath>ТаймерСтрока</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Время</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont faceName="Lab Grotesque K" height="16" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<Width>8</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Font faceName="Lab Grotesque K" height="16" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<ContextMenu name="ТаймерСтрокаКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ТаймерСтрокаРасширеннаяПодсказка" id="94"/>
+								</LabelField>
+								<LabelDecoration name="ДекорацияЧтоДелать" id="100">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font faceName="Lab Grotesque K" height="16" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ожидание...</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияЧтоДелатьКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="ДекорацияЧтоДелатьРасширеннаяПодсказка" id="102"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="ПроверитьРешение" id="26">
+							<Type>UsualButton</Type>
+							<DefaultButton>true</DefaultButton>
+							<Enabled>false</Enabled>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>1</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ПроверитьРешение</CommandName>
+							<TextColor>#FFFFFF</TextColor>
+							<BackColor>#3D3D3D</BackColor>
+							<Font faceName="Lab Grotesque K" height="18" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<ExtendedTooltip name="ПроверитьРешениеРасширеннаяПодсказка" id="27"/>
+						</Button>
+						<HTMLDocumentField name="ПолеАлгоритмаСервер" id="89">
+							<DataPath>ПолеАлгоритмаСервер</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>30</Width>
+							<ContextMenu name="ПолеАлгоритмаСерверКонтекстноеМеню" id="90">
+								<Autofill>false</Autofill>
+							</ContextMenu>
+							<ExtendedTooltip name="ПолеАлгоритмаСерверРасширеннаяПодсказка" id="91"/>
+						</HTMLDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаРезультат" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница результат</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница результат</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаРезультатРасширеннаяПодсказка" id="8"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьПровалено" id="12">
+							<Visible>false</Visible>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Font faceName="Lab Grotesque K Black" height="36" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ИСПЫТАНИЕ ПРОВАЛЕНО</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<ContextMenu name="НадписьПроваленоКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="НадписьПроваленоРасширеннаяПодсказка" id="14"/>
+						</LabelDecoration>
+						<LabelDecoration name="НадписьУспешно" id="9">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Font faceName="Lab Grotesque K Black" height="36" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ИСПЫТАНИЕ ВЫПОЛНЕНО УСПЕШНО</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<ContextMenu name="НадписьУспешноКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="НадписьУспешноРасширеннаяПодсказка" id="11"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаКонецИгры" id="103">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница результат</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница результат</v8:content>
+						</v8:item>
+					</ToolTip>
+					<VerticalAlign>Center</VerticalAlign>
+					<ExtendedTooltip name="СтраницаКонецИгрыРасширеннаяПодсказка" id="104"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьСчетИгры" id="105">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Font faceName="Lab Grotesque K Black" height="36" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>0:0</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<ContextMenu name="НадписьСчетИгрыКонтекстноеМеню" id="106"/>
+							<ExtendedTooltip name="НадписьСчетИгрыРасширеннаяПодсказка" id="107"/>
+						</LabelDecoration>
+						<LabelDecoration name="НадписьПобедитель" id="108">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Font faceName="Lab Grotesque K Black" height="36" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ведущий</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<ContextMenu name="НадписьПобедительКонтекстноеМеню" id="109"/>
+							<ExtendedTooltip name="НадписьПобедительРасширеннаяПодсказка" id="110"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДевБаттл_Испытание</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПостановкаЗадачи" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Постановка задачи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПротоколТестирования" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Протокол тестирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолеАлгоритмаСервер" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле алгоритма сервер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатИспытаний" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат испытаний</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийРаунд" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий раунд</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстАлгоритмаСервер" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст алгоритма сервер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокТестов" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список тестов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Тест" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тест</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Предустановка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предустановка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Представление" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВыполненУспешно" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнен успешно</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаймерОжидание" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймер ожидание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаймерСтрока" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймер строка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаймерЗадача" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймер задача</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Таймер" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяИгрока" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя игрока</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Отладка" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отладка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоФинальноеИспытание" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это финальное испытание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПравилаИгры" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правила игры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РезультатыИспытанийРаунд</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РезультатыИспытанийЗадача</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РезультатыИспытанийВремя</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РезультатыИспытаний.Выполнено</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFDDD6</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РезультатыИспытанийРаунд</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РезультатыИспытанийЗадача</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РезультатыИспытанийВремя</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РезультатыИспытаний.Выполнено</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#D7F8AE</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаймерСтрока</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Таймер</dcsset:left>
+						<dcsset:comparisonType>Less</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">30</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаймерСтрока</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Таймер</dcsset:left>
+						<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">30</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#000000</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьРешение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово!</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить решение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F5</Shortcut>
+			<Action>ПроверитьРешение</Action>
+		</Command>
+	</Commands>
+</Form>

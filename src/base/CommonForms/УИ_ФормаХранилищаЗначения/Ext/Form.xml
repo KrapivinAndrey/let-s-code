@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Данные ХЗ</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="_ТаблицаЗначений" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>_ТаблицаЗначений</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="_ТаблицаЗначенийКонтекстноеМеню" id="2">
+				<ChildItems>
+					<ButtonGroup name="_ТаблицаЗначенийКонтекстноеМенюГруппа1" id="16">
+						<ExtendedTooltip name="_ТаблицаЗначенийКонтекстноеМенюГруппа1РасширеннаяПодсказка" id="17"/>
+						<ChildItems>
+							<Button name="_ТаблицаЗначенийКонтекстноеМенюОткрытьОбъект" id="18">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОткрытьОбъект</CommandName>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="_ТаблицаЗначенийКонтекстноеМенюОткрытьОбъектРасширеннаяПодсказка" id="19"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="_ТаблицаЗначенийКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="_ТаблицаЗначенийОткрытьОбъект" id="14">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОткрытьОбъект</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="_ТаблицаЗначенийОткрытьОбъектРасширеннаяПодсказка" id="15"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="_ТаблицаЗначенийРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="_ТаблицаЗначенийСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>_ТаблицаЗначений</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="_ТаблицаЗначенийСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="_ТаблицаЗначенийСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="_ТаблицаЗначенийСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>_ТаблицаЗначений</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<HorizontalLocation>Left</HorizontalLocation>
+				<ContextMenu name="_ТаблицаЗначенийСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="_ТаблицаЗначенийСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="_ТаблицаЗначенийУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>_ТаблицаЗначений</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="_ТаблицаЗначенийУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="_ТаблицаЗначенийУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">_ТаблицаЗначенийВыбор</Event>
+			</Events>
+		</Table>
+		<Table name="_ДеревоЗначений" id="20">
+			<Representation>Tree</Representation>
+			<Visible>false</Visible>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>_ДеревоЗначений</DataPath>
+			<ContextMenu name="_ДеревоЗначенийКонтекстноеМеню" id="21">
+				<ChildItems>
+					<ButtonGroup name="_ДеревоЗначенийКонтекстноеМенюГруппа1" id="33">
+						<ExtendedTooltip name="_ДеревоЗначенийКонтекстноеМенюГруппа1РасширеннаяПодсказка" id="34"/>
+						<ChildItems>
+							<Button name="_ДеревоЗначенийКонтекстноеМенюОткрытьОбъект" id="35">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОткрытьОбъект</CommandName>
+								<ExtendedTooltip name="_ДеревоЗначенийКонтекстноеМенюОткрытьОбъектРасширеннаяПодсказка" id="36"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="_ДеревоЗначенийКоманднаяПанель" id="22"/>
+			<ExtendedTooltip name="_ДеревоЗначенийРасширеннаяПодсказка" id="23"/>
+			<SearchStringAddition name="_ДеревоЗначенийСтрокаПоиска" id="24">
+				<AdditionSource>
+					<Item>_ДеревоЗначений</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="_ДеревоЗначенийСтрокаПоискаКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="_ДеревоЗначенийСтрокаПоискаРасширеннаяПодсказка" id="26"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="_ДеревоЗначенийСостояниеПросмотра" id="27">
+				<AdditionSource>
+					<Item>_ДеревоЗначений</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<HorizontalLocation>Left</HorizontalLocation>
+				<ContextMenu name="_ДеревоЗначенийСостояниеПросмотраКонтекстноеМеню" id="28"/>
+				<ExtendedTooltip name="_ДеревоЗначенийСостояниеПросмотраРасширеннаяПодсказка" id="29"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="_ДеревоЗначенийУправлениеПоиском" id="30">
+				<AdditionSource>
+					<Item>_ДеревоЗначений</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="_ДеревоЗначенийУправлениеПоискомКонтекстноеМеню" id="31"/>
+				<ExtendedTooltip name="_ДеревоЗначенийУправлениеПоискомРасширеннаяПодсказка" id="32"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">_ДеревоЗначенийВыбор</Event>
+			</Events>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="_ТаблицаЗначений" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица значений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="_ДанныеДляОтображения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные для отображения</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="_ДеревоЗначений" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево значений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьОбъект" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть объект...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть текущий объект в спец. форме</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckSyntax</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьОбъект</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,1212 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Редактор движений</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<ScalingMode>Compact</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОсновное" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основное</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основное</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновноеРасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОсновное1" id="117">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОсновное1РасширеннаяПодсказка" id="118"/>
+					<ChildItems>
+						<InputField name="мОбъектСсылка" id="1">
+							<DataPath>мОбъектСсылка</DataPath>
+							<ChoiceButton>true</ChoiceButton>
+							<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+							<ClearButton>true</ClearButton>
+							<OpenButton>true</OpenButton>
+							<ContextMenu name="мОбъектСсылкаКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="мОбъектСсылкаРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">мОбъектСсылкаПриИзменении</Event>
+								<Event name="StartChoice">мОбъектСсылкаНачалоВыбора</Event>
+								<Event name="Clearing">мОбъектСсылкаОчистка</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="_ЗаписьВРежимеЗагрузки" id="103">
+							<DataPath>_ЗаписьВРежимеЗагрузки</DataPath>
+							<TitleTextColor>style:FieldSelectionBackColor</TitleTextColor>
+							<TitleFont ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="_ЗаписьВРежимеЗагрузкиКонтекстноеМеню" id="104"/>
+							<ExtendedTooltip name="_ЗаписьВРежимеЗагрузкиРасширеннаяПодсказка" id="105"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОсновное2" id="119">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОсновное2РасширеннаяПодсказка" id="120"/>
+					<ChildItems>
+						<CheckBoxField name="_ЗадаватьВопросПриЗакрытии" id="114">
+							<DataPath>_ЗадаватьВопросПриЗакрытии</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="_ЗадаватьВопросПриЗакрытииКонтекстноеМеню" id="115"/>
+							<ExtendedTooltip name="_ЗадаватьВопросПриЗакрытииРасширеннаяПодсказка" id="116"/>
+						</CheckBoxField>
+						<CheckBoxField name="_БыстрыйВызовСервера" id="111">
+							<DataPath>_БыстрыйВызовСервера</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="_БыстрыйВызовСервераКонтекстноеМеню" id="112"/>
+							<ExtendedTooltip name="_БыстрыйВызовСервераРасширеннаяПодсказка" id="113"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРегистры" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Движения документа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа регистры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаРегистрыРасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<Table name="_ТабРегистры" id="4">
+					<Representation>List</Representation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>_ТабРегистры</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="_ТабРегистрыКонтекстноеМеню" id="5"/>
+					<AutoCommandBar name="_ТабРегистрыКоманднаяПанель" id="6">
+						<ChildItems>
+							<Button name="_ТабРегистрыСортироватьСписокПоВозрастанию" id="59">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item._ТабРегистры.StandardCommand.SortListAsc</CommandName>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="_ТабРегистрыСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="60"/>
+							</Button>
+							<Button name="_ТабРегистрыСортироватьСписокПоУбыванию" id="61">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item._ТабРегистры.StandardCommand.SortListDesc</CommandName>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="_ТабРегистрыСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="62"/>
+							</Button>
+							<Button name="_ТабРегистрыНайти" id="63">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item._ТабРегистры.StandardCommand.Find</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.Find</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="_ТабРегистрыНайтиРасширеннаяПодсказка" id="64"/>
+							</Button>
+							<Button name="_ТабРегистрыОтменитьПоиск" id="65">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item._ТабРегистры.StandardCommand.CancelSearch</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.CancelSearch</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="_ТабРегистрыОтменитьПоискРасширеннаяПодсказка" id="66"/>
+							</Button>
+							<Button name="_ТабРегистры_ОткрытьВНовомОкне" id="129">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command._ОткрытьВНовомОкне</CommandName>
+								<ExtendedTooltip name="_ТабРегистры_ОткрытьВНовомОкнеРасширеннаяПодсказка" id="130"/>
+							</Button>
+							<ButtonGroup name="_ТабРегистрыГруппа1" id="67">
+								<ExtendedTooltip name="_ТабРегистрыГруппа1РасширеннаяПодсказка" id="68"/>
+								<ChildItems>
+									<Button name="_ТабРегистры_УстановитьФлажки" id="125">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command._УстановитьФлажки</CommandName>
+										<ExtendedTooltip name="_ТабРегистры_УстановитьФлажкиРасширеннаяПодсказка" id="126"/>
+									</Button>
+									<Button name="_ТабРегистры_УстановитьФлажкиДляИзмененных" id="127">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command._УстановитьФлажкиДляИзмененных</CommandName>
+										<ExtendedTooltip name="_ТабРегистры_УстановитьФлажкиДляИзмененныхРасширеннаяПодсказка" id="128"/>
+									</Button>
+									<Button name="_ТабРегистры_СнятьФлажки" id="123">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command._СнятьФлажки</CommandName>
+										<ExtendedTooltip name="_ТабРегистры_СнятьФлажкиРасширеннаяПодсказка" id="124"/>
+									</Button>
+									<Button name="_ТабРегистры_СортироватьРегистрыСтандартно" id="106">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command._СортироватьРегистрыСтандартно</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="_ТабРегистры_СортироватьРегистрыСтандартноРасширеннаяПодсказка" id="107"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<ButtonGroup name="_ТабРегистрыГруппа2" id="121">
+								<ExtendedTooltip name="_ТабРегистрыГруппа2РасширеннаяПодсказка" id="122"/>
+								<ChildItems>
+									<Button name="_ТабРегистры_Обновить" id="29">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command._Обновить</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="_ТабРегистры_ОбновитьРасширеннаяПодсказка" id="30"/>
+									</Button>
+									<Button name="_ТабРегистры_Записать" id="31">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command._Записать</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="_ТабРегистры_ЗаписатьРасширеннаяПодсказка" id="32"/>
+									</Button>
+									<Button name="_ТабРегистры_ОчиститьДвижения" id="133">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command._ОчиститьДвижения</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="_ТабРегистры_ОчиститьДвиженияРасширеннаяПодсказка" id="134"/>
+									</Button>
+									<Button name="_ТабРегистры_ЗагрузитьДвиженияДругогоДокумента" id="131">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command._ЗагрузитьДвиженияДругогоДокумента</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="_ТабРегистры_ЗагрузитьДвиженияДругогоДокументаРасширеннаяПодсказка" id="132"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="_ТабРегистрыРасширеннаяПодсказка" id="7"/>
+					<SearchStringAddition name="_ТабРегистрыСтрокаПоиска" id="8">
+						<AdditionSource>
+							<Item>_ТабРегистры</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="_ТабРегистрыСтрокаПоискаКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="_ТабРегистрыСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="_ТабРегистрыСостояниеПросмотра" id="11">
+						<AdditionSource>
+							<Item>_ТабРегистры</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<HorizontalLocation>Left</HorizontalLocation>
+						<ContextMenu name="_ТабРегистрыСостояниеПросмотраКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="_ТабРегистрыСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="_ТабРегистрыУправлениеПоиском" id="14">
+						<AdditionSource>
+							<Item>_ТабРегистры</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="_ТабРегистрыУправлениеПоискомКонтекстноеМеню" id="15"/>
+						<ExtendedTooltip name="_ТабРегистрыУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnActivateRow">_ТабРегистрыПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<CheckBoxField name="_ТабРегистрыЗаписать" id="17">
+							<DataPath>_ТабРегистры.Записать</DataPath>
+							<EditMode>Directly</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="_ТабРегистрыЗаписатьКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="_ТабРегистрыЗаписатьРасширеннаяПодсказка" id="19"/>
+						</CheckBoxField>
+						<InputField name="_ТабРегистрыИзменен" id="100">
+							<DataPath>_ТабРегистры.Изменен</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="_ТабРегистрыИзмененКонтекстноеМеню" id="101"/>
+							<ExtendedTooltip name="_ТабРегистрыИзмененРасширеннаяПодсказка" id="102"/>
+						</InputField>
+						<InputField name="_ТабРегистрыЕстьЗаписи" id="26">
+							<DataPath>_ТабРегистры.ЕстьЗаписи</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="_ТабРегистрыЕстьЗаписиКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="_ТабРегистрыЕстьЗаписиРасширеннаяПодсказка" id="28"/>
+						</InputField>
+						<InputField name="_ТабРегистрыЧислоЗаписей" id="69">
+							<DataPath>_ТабРегистры.ЧислоЗаписей</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧН=</v8:content>
+								</v8:item>
+							</Format>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧН=</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="_ТабРегистрыЧислоЗаписейКонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="_ТабРегистрыЧислоЗаписейРасширеннаяПодсказка" id="71"/>
+						</InputField>
+						<InputField name="_ТабРегистрыВидРегистра" id="72">
+							<DataPath>_ТабРегистры.ВидРегистра</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="_ТабРегистрыВидРегистраКонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="_ТабРегистрыВидРегистраРасширеннаяПодсказка" id="74"/>
+						</InputField>
+						<InputField name="_ТабРегистрыИмя" id="20">
+							<DataPath>_ТабРегистры.Имя</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="_ТабРегистрыИмяКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="_ТабРегистрыИмяРасширеннаяПодсказка" id="22"/>
+						</InputField>
+						<InputField name="_ТабРегистрыПредставление" id="23">
+							<DataPath>_ТабРегистры.Представление</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="_ТабРегистрыПредставлениеКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="_ТабРегистрыПредставлениеРасширеннаяПодсказка" id="25"/>
+						</InputField>
+						<InputField name="_ТабРегистрыПолноеИмя" id="108">
+							<DataPath>_ТабРегистры.ПолноеИмя</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="_ТабРегистрыПолноеИмяКонтекстноеМеню" id="109"/>
+							<ExtendedTooltip name="_ТабРегистрыПолноеИмяРасширеннаяПодсказка" id="110"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНаборЗаписей" id="79">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактор набора записей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа набор записей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаНаборЗаписейРасширеннаяПодсказка" id="80"/>
+			<ChildItems>
+				<InputField name="_ПолноеИмяРегистра" id="81">
+					<DataPath>Items._ТабРегистры.CurrentData.ПолноеИмя</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя регистра</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="_ПолноеИмяРегистраКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="_ПолноеИмяРегистраРасширеннаяПодсказка" id="83"/>
+				</InputField>
+				<UsualGroup name="ГруппаТипЗначения" id="135">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип данных для значения в текущем поле</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа тип значения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаТипЗначенияРасширеннаяПодсказка" id="136"/>
+					<ChildItems>
+						<InputField name="_ТипЗначенияТекущегоПоля" id="137">
+							<DataPath>_ТипЗначенияТекущегоПоля</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип данных для значения в текущем поле - отображается по команде "Показать тип значения"</v8:content>
+								</v8:item>
+							</ToolTip>
+							<TextColor>style:FieldSelectionBackColor</TextColor>
+							<ContextMenu name="_ТипЗначенияТекущегоПоляКонтекстноеМеню" id="138"/>
+							<ExtendedTooltip name="_ТипЗначенияТекущегоПоляРасширеннаяПодсказка" id="139"/>
+						</InputField>
+						<CommandBar name="ГруппаТипЗначенияКП" id="140">
+							<ExtendedTooltip name="ГруппаТипЗначенияКПРасширеннаяПодсказка" id="141"/>
+							<ChildItems>
+								<Button name="_ПоказатьТипЗначения" id="142">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command._ПоказатьТипЗначения</CommandName>
+									<ExtendedTooltip name="_ПоказатьТипЗначенияРасширеннаяПодсказка" id="143"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаЗаполнениеЗначений" id="90">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполнение колонок таблиц движений</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполнение значений</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Collapsible</Behavior>
+					<CollapsedRepresentationTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполнение колонок таблиц данных</v8:content>
+						</v8:item>
+					</CollapsedRepresentationTitle>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаЗаполнениеЗначенийРасширеннаяПодсказка" id="91"/>
+					<ChildItems>
+						<InputField name="_ЗначениеДляЗаполнения" id="92">
+							<DataPath>_ЗначениеДляЗаполнения</DataPath>
+							<ChoiceButton>true</ChoiceButton>
+							<ClearButton>true</ClearButton>
+							<OpenButton>true</OpenButton>
+							<ContextMenu name="_ЗначениеДляЗаполненияКонтекстноеМеню" id="93">
+								<ChildItems>
+									<ButtonGroup name="_ЗначениеДляЗаполненияКонтекстноеМенюГруппа1" id="144">
+										<ExtendedTooltip name="_ЗначениеДляЗаполненияКонтекстноеМенюГруппа1РасширеннаяПодсказка" id="145"/>
+										<ChildItems>
+											<Button name="_ЗначениеДляЗаполненияКонтекстноеМеню_ВставитьУникальныйИдентификатор" id="146">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command._ВставитьУникальныйИдентификатор</CommandName>
+												<ExtendedTooltip name="_ЗначениеДляЗаполненияКонтекстноеМеню_ВставитьУникальныйИдентификаторРасширеннаяПодсказка" id="147"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+								</ChildItems>
+							</ContextMenu>
+							<ExtendedTooltip name="_ЗначениеДляЗаполненияРасширеннаяПодсказка" id="94"/>
+							<Events>
+								<Event name="StartChoice">_ЗначениеДляЗаполненияНачалоВыбора</Event>
+								<Event name="Clearing">_ЗначениеДляЗаполненияОчистка</Event>
+							</Events>
+						</InputField>
+						<Button name="_ЗаполнитьДанныеТекущейКолонки" id="95">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command._ЗаполнитьДанныеТекущейКолонки</CommandName>
+							<ExtendedTooltip name="_ЗаполнитьДанныеТекущейКолонкиРасширеннаяПодсказка" id="96"/>
+						</Button>
+						<CheckBoxField name="_ПриЗаполненииОбрабатыватьТолькоВыделенныеСтроки" id="97">
+							<DataPath>_ПриЗаполненииОбрабатыватьТолькоВыделенныеСтроки</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="_ПриЗаполненииОбрабатыватьТолькоВыделенныеСтрокиКонтекстноеМеню" id="98"/>
+							<ExtendedTooltip name="_ПриЗаполненииОбрабатыватьТолькоВыделенныеСтрокиРасширеннаяПодсказка" id="99"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<Pages name="СтраницыНаборыЗаписей" id="75">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы наборы записей</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы наборы записей</v8:content>
+						</v8:item>
+					</ToolTip>
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="СтраницыНаборыЗаписейРасширеннаяПодсказка" id="76"/>
+					<ChildItems>
+						<Page name="СтрПример" id="77">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Стр пример</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Стр пример</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="СтрПримерРасширеннаяПодсказка" id="78"/>
+							<ChildItems>
+								<Table name="_ПримерДвижений" id="39">
+									<Representation>List</Representation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>_ПримерДвижений</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="_ПримерДвиженийКонтекстноеМеню" id="40"/>
+									<AutoCommandBar name="_ПримерДвиженийКоманднаяПанель" id="41">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="_ПримерДвиженийРасширеннаяПодсказка" id="42"/>
+									<SearchStringAddition name="_ПримерДвиженийСтрокаПоиска" id="43">
+										<AdditionSource>
+											<Item>_ПримерДвижений</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="_ПримерДвиженийСтрокаПоискаКонтекстноеМеню" id="44"/>
+										<ExtendedTooltip name="_ПримерДвиженийСтрокаПоискаРасширеннаяПодсказка" id="45"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="_ПримерДвиженийСостояниеПросмотра" id="46">
+										<AdditionSource>
+											<Item>_ПримерДвижений</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<HorizontalLocation>Left</HorizontalLocation>
+										<ContextMenu name="_ПримерДвиженийСостояниеПросмотраКонтекстноеМеню" id="47"/>
+										<ExtendedTooltip name="_ПримерДвиженийСостояниеПросмотраРасширеннаяПодсказка" id="48"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="_ПримерДвиженийУправлениеПоиском" id="49">
+										<AdditionSource>
+											<Item>_ПримерДвижений</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="_ПримерДвиженийУправлениеПоискомКонтекстноеМеню" id="50"/>
+										<ExtendedTooltip name="_ПримерДвиженийУправлениеПоискомРасширеннаяПодсказка" id="51"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="_ПримерДвиженийРегистратор" id="52">
+											<DataPath>_ПримерДвижений.Регистратор</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="_ПримерДвиженийРегистраторКонтекстноеМеню" id="53"/>
+											<ExtendedTooltip name="_ПримерДвиженийРегистраторРасширеннаяПодсказка" id="54"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УИ_РедакторРеквизитовОбъекта</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="мОбъектСсылка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьКФормам" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к формам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="_ТабРегистры" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таб регистры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Записать" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Записать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Имя" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Представление" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕстьЗаписи" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть записи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЧислоЗаписей" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Число записей</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидРегистра" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид регистра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПолноеИмя" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полное имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕстьРеквизитФормы" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть реквизит формы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Изменен" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="_ПримерДвижений" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пример движений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Регистратор" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="_ПриЗаполненииОбрабатыватьТолькоВыделенныеСтроки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обрабатывать только выделенные строки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>_ПриЗаполненииОбрабатыватьТолькоВыделенныеСтроки</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="_ЗначениеДляЗаполнения" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение для заполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:Type>v8:UUID</v8:Type>
+				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="мОбъектСсылкаПредыдущий" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="_ЗаписьВРежимеЗагрузки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запись в режиме загрузки ( проверки отключены )</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="_БыстрыйВызовСервера" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Быстрый вызов сервера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>_БыстрыйВызовСервера</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="_ЗадаватьВопросПриЗакрытии" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задавать вопрос при закрытии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>_ЗадаватьВопросПриЗакрытии</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="_ПолноеИмяДокумента" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полное имя документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="_ТипЗначенияТекущегоПоля" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>_ТабРегистры</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">_ТабРегистры.ЕстьЗаписи</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ToolTipBackColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="_Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_Обновить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="_Записать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать...</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_Записать</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="_ОбновитьНабор" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить набор записей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_ОбновитьНабор</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="_ЗаписатьНабор" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать набор записей...</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_ЗаписатьНабор</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="_ЗаполнитьДанныеТекущейКолонки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить данные текущей колонки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить данные текущей колонки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_ЗаполнитьДанныеТекущейКолонки</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="_ПереключитьАктивностьЗаписей" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переключить активность записей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переключить активность записей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SwitchActivity</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_ПереключитьАктивностьЗаписей</Action>
+		</Command>
+		<Command name="_СортироватьРегистрыСтандартно" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По весу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Упорядочить список по значимости</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SortListAsc</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_СортироватьРегистрыСтандартно</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="_СнятьФлажки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_СнятьФлажки</Action>
+		</Command>
+		<Command name="_УстановитьФлажки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_УстановитьФлажки</Action>
+		</Command>
+		<Command name="_УстановитьФлажкиДляИзмененных" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Измененные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отметить измененные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_УстановитьФлажкиДляИзмененных</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="_ОткрытьВНовомОкне" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть в новом окне...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть в новом окне</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Form</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_ОткрытьВНовомОкне</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="_ОткрытьОбъект" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть объект...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть текущий объект в спец. форме</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckSyntax</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_ОткрытьОбъект</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="_ЗагрузитьДвиженияДругогоДокумента" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить движения...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить движения другого документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataCompositionStandardSettings</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_ЗагрузитьДвиженияДругогоДокумента</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="_ОчиститьДвижения" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить движения...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить движения для выделнных строк...</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DeleteDirectly</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_ОчиститьДвижения</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="_ПоказатьТипЗначения" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать тип значения в текущем поле</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+T</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.InputFieldChooseType</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_ПоказатьТипЗначения</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="_ВставитьУникальныйИдентификатор" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить уникальный идентификатор...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить уникальный идентификатор...</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Char</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_ВставитьУникальныйИдентификатор</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,1796 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Группа1" id="201">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="202"/>
+			<Events>
+				<Event name="OnCurrentPageChange">Группа1ПриСменеСтраницы</Event>
+			</Events>
+			<ChildItems>
+				<Page name="ГруппаРедактор" id="203">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Редактор</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа редактор</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаРедакторРасширеннаяПодсказка" id="204"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="95">
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="96"/>
+							<ChildItems>
+								<UsualGroup name="Группа4" id="97">
+									<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+									<Group>Vertical</Group>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="98"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация1" id="184">
+											<VerticalStretch>true</VerticalStretch>
+											<ContextMenu name="Декорация1КонтекстноеМеню" id="185"/>
+											<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="186"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа7" id="130">
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="131"/>
+											<ChildItems>
+												<Button name="НачалоСтроки" id="10">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.НачалоСтроки</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="НачалоСтрокиРасширеннаяПодсказка" id="11"/>
+												</Button>
+												<Button name="КонецСтроки" id="12">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.КонецСтроки</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="КонецСтрокиРасширеннаяПодсказка" id="13"/>
+												</Button>
+												<Button name="Точка" id="28">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.Точка</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ТочкаРасширеннаяПодсказка" id="29"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа10" id="134">
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="135"/>
+											<ChildItems>
+												<Button name="ВозвратКаретки" id="68">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.ВозвратКаретки</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ВозвратКареткиРасширеннаяПодсказка" id="69"/>
+												</Button>
+												<Button name="ПереводСтроки" id="66">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.ПереводСтроки</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ПереводСтрокиРасширеннаяПодсказка" id="67"/>
+												</Button>
+												<Button name="Табуляция" id="70">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.Табуляция</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ТабуляцияРасширеннаяПодсказка" id="71"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа11" id="136">
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="137"/>
+											<ChildItems>
+												<Button name="ПовторM" id="24">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.ПовторM</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ПовторMРасширеннаяПодсказка" id="25"/>
+												</Button>
+												<Button name="ПовторБольшеN" id="22">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.ПовторБольшеN</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ПовторБольшеNРасширеннаяПодсказка" id="23"/>
+												</Button>
+												<Button name="ПовторN" id="20">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.ПовторN</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ПовторNРасширеннаяПодсказка" id="21"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа9" id="132">
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="133"/>
+											<ChildItems>
+												<Button name="Экран" id="8">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.Экран</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ЭкранРасширеннаяПодсказка" id="9"/>
+												</Button>
+												<Button name="ПовторОт0НеЖадный" id="140">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.ПовторОт0НеЖадный</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ПовторОт0НеЖадныйРасширеннаяПодсказка" id="141"/>
+												</Button>
+												<Button name="ПовторОт0" id="14">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.ПовторОт0</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ПовторОт0РасширеннаяПодсказка" id="15"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа12" id="138">
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="139"/>
+											<ChildItems>
+												<Button name="Повтор01" id="18">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.Повтор01</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="Повтор01РасширеннаяПодсказка" id="19"/>
+												</Button>
+												<Button name="ПовторОт1НеЖадный" id="142">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.ПовторОт1НеЖадный</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ПовторОт1НеЖадныйРасширеннаяПодсказка" id="143"/>
+												</Button>
+												<Button name="ПовторОт1" id="16">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.ПовторОт1</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ПовторОт1РасширеннаяПодсказка" id="17"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа13" id="144">
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="145"/>
+											<ChildItems>
+												<Button name="НеИдентификатор" id="72">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.НеИдентификатор</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="НеИдентификаторРасширеннаяПодсказка" id="73"/>
+												</Button>
+												<Button name="Идентификатор" id="64">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.Идентификатор</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="65"/>
+												</Button>
+												<Button name="Вариант" id="40">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.Вариант</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ВариантРасширеннаяПодсказка" id="41"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа14" id="146">
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="147"/>
+											<ChildItems>
+												<Button name="НеЦифра" id="58">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.НеЦифра</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="НеЦифраРасширеннаяПодсказка" id="59"/>
+												</Button>
+												<Button name="Цифра" id="56">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.Цифра</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ЦифраРасширеннаяПодсказка" id="57"/>
+												</Button>
+												<Button name="ВариантБезФиксации" id="154">
+													<Type>UsualButton</Type>
+													<Visible>false</Visible>
+													<Width>5</Width>
+													<CommandName>Form.Command.ВариантБезФиксации</CommandName>
+													<BackColor>web:PaleTurquoise</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ВариантБезФиксацииРасширеннаяПодсказка" id="155"/>
+												</Button>
+												<Button name="Тэг" id="124">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.Тэг</CommandName>
+													<BackColor>web:DarkSeaGreen</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ТэгРасширеннаяПодсказка" id="125"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа16" id="150">
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="151"/>
+											<ChildItems>
+												<Button name="НеГраницаСлова" id="54">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.НеГраницаСлова</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="НеГраницаСловаРасширеннаяПодсказка" id="55"/>
+												</Button>
+												<Button name="ГраницаСлова" id="52">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.ГраницаСлова</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ГраницаСловаРасширеннаяПодсказка" id="53"/>
+												</Button>
+												<Button name="ДиапазонСимволовОтриц" id="48">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.ДиапазонСимволовОтриц</CommandName>
+													<BackColor>web:PaleTurquoise</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ДиапазонСимволовОтрицРасширеннаяПодсказка" id="49"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа15" id="148">
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа15РасширеннаяПодсказка" id="149"/>
+											<ChildItems>
+												<Button name="НеПробельныйСимвол" id="62">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.НеПробельныйСимвол</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="НеПробельныйСимволРасширеннаяПодсказка" id="63"/>
+												</Button>
+												<Button name="ПробельныйСимвол" id="60">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.ПробельныйСимвол</CommandName>
+													<BackColor>web:Moccasin</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ПробельныйСимволРасширеннаяПодсказка" id="61"/>
+												</Button>
+												<Button name="ДиапазонСимволов" id="46">
+													<Type>UsualButton</Type>
+													<Width>5</Width>
+													<CommandName>Form.Command.ДиапазонСимволов</CommandName>
+													<BackColor>web:PaleTurquoise</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ДиапазонСимволовРасширеннаяПодсказка" id="47"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа18" id="156">
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа18РасширеннаяПодсказка" id="157"/>
+											<ChildItems>
+												<Button name="ШаблонФикс" id="30">
+													<Type>UsualButton</Type>
+													<Width>8</Width>
+													<CommandName>Form.Command.ШаблонФикс</CommandName>
+													<BackColor>web:PaleTurquoise</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ШаблонФиксРасширеннаяПодсказка" id="31"/>
+												</Button>
+												<Button name="ШаблонНеФикс" id="32">
+													<Type>UsualButton</Type>
+													<Width>8</Width>
+													<CommandName>Form.Command.ШаблонНеФикс</CommandName>
+													<BackColor>web:PaleTurquoise</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ШаблонНеФиксРасширеннаяПодсказка" id="33"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа19" id="158">
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа19РасширеннаяПодсказка" id="159"/>
+											<ChildItems>
+												<Button name="ВпередиЕсть" id="34">
+													<Type>UsualButton</Type>
+													<Width>8</Width>
+													<CommandName>Form.Command.ВпередиЕсть</CommandName>
+													<BackColor>web:PaleTurquoise</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ВпередиЕстьРасширеннаяПодсказка" id="35"/>
+												</Button>
+												<Button name="ВпередиНет" id="36">
+													<Type>UsualButton</Type>
+													<Width>8</Width>
+													<CommandName>Form.Command.ВпередиНет</CommandName>
+													<BackColor>web:PaleTurquoise</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ExtendedTooltip name="ВпередиНетРасширеннаяПодсказка" id="37"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<Button name="Ввести" id="128">
+											<Type>UsualButton</Type>
+											<DefaultButton>true</DefaultButton>
+											<Width>17</Width>
+											<CommandName>Form.Command.Ввести</CommandName>
+											<ExtendedTooltip name="ВвестиРасширеннаяПодсказка" id="129"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа5" id="99">
+									<Width>75</Width>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="100"/>
+									<ChildItems>
+										<Table name="СписокТэгов" id="101">
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ReadOnly>true</ReadOnly>
+											<ChoiceMode>true</ChoiceMode>
+											<Header>false</Header>
+											<HorizontalLines>false</HorizontalLines>
+											<VerticalLines>false</VerticalLines>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<FileDragMode>AsFile</FileDragMode>
+											<DataPath>СписокТэгов</DataPath>
+											<RowPictureDataPath>СписокТэгов.Picture</RowPictureDataPath>
+											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Shortcut>Ctrl+Alt+Space</Shortcut>
+											<CommandSet>
+												<ExcludedCommand>Choose</ExcludedCommand>
+											</CommandSet>
+											<ContextMenu name="СписокТэговКонтекстноеМеню" id="102">
+												<ChildItems>
+													<Button name="СписокТэговКонтекстноеМенюВыбратьИмя" id="179">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ВыбратьИмя</CommandName>
+														<ExtendedTooltip name="СписокТэговКонтекстноеМенюВыбратьИмяРасширеннаяПодсказка" id="180"/>
+													</Button>
+													<Button name="СписокТэговКонтекстноеМенюВыбратьЗначение" id="177">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ВыбратьЗначение</CommandName>
+														<ExtendedTooltip name="СписокТэговКонтекстноеМенюВыбратьЗначениеРасширеннаяПодсказка" id="178"/>
+													</Button>
+													<ButtonGroup name="СписокТэговКонтекстноеМенюГруппа1" id="195">
+														<ExtendedTooltip name="СписокТэговКонтекстноеМенюГруппа1РасширеннаяПодсказка" id="196"/>
+														<ChildItems>
+															<Button name="СписокТэговКонтекстноеМенюНайтиИЗаменитьВсеВхожденияИмени" id="199">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.НайтиИЗаменитьВсеВхожденияИмени</CommandName>
+																<ExtendedTooltip name="СписокТэговКонтекстноеМенюНайтиИЗаменитьВсеВхожденияИмениРасширеннаяПодсказка" id="200"/>
+															</Button>
+															<Button name="СписокТэговКонтекстноеМенюНайтиИЗаменитьВсеВхожденияЗначения" id="197">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.НайтиИЗаменитьВсеВхожденияЗначения</CommandName>
+																<ExtendedTooltip name="СписокТэговКонтекстноеМенюНайтиИЗаменитьВсеВхожденияЗначенияРасширеннаяПодсказка" id="198"/>
+															</Button>
+														</ChildItems>
+													</ButtonGroup>
+												</ChildItems>
+											</ContextMenu>
+											<AutoCommandBar name="СписокТэговКоманднаяПанель" id="103"/>
+											<ExtendedTooltip name="СписокТэговРасширеннаяПодсказка" id="104"/>
+											<SearchStringAddition name="СписокТэговСтрокаПоиска" id="105">
+												<AdditionSource>
+													<Item>СписокТэгов</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокТэговСтрокаПоискаКонтекстноеМеню" id="106"/>
+												<ExtendedTooltip name="СписокТэговСтрокаПоискаРасширеннаяПодсказка" id="107"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="СписокТэговСостояниеПросмотра" id="108">
+												<AdditionSource>
+													<Item>СписокТэгов</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<HorizontalLocation>Left</HorizontalLocation>
+												<ContextMenu name="СписокТэговСостояниеПросмотраКонтекстноеМеню" id="109"/>
+												<ExtendedTooltip name="СписокТэговСостояниеПросмотраРасширеннаяПодсказка" id="110"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="СписокТэговУправлениеПоиском" id="111">
+												<AdditionSource>
+													<Item>СписокТэгов</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокТэговУправлениеПоискомКонтекстноеМеню" id="112"/>
+												<ExtendedTooltip name="СписокТэговУправлениеПоискомРасширеннаяПодсказка" id="113"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="Selection">СписокТэговВыбор</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="СписокТэговПредставление" id="121">
+													<DataPath>СписокТэгов.Presentation</DataPath>
+													<Shortcut>Ctrl+Alt+Space</Shortcut>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СписокТэговПредставлениеКонтекстноеМеню" id="122"/>
+													<ExtendedTooltip name="СписокТэговПредставлениеРасширеннаяПодсказка" id="123"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+										<UsualGroup name="Группа8" id="126">
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="127"/>
+											<ChildItems>
+												<InputField name="ОтборТэгов" id="181">
+													<DataPath>ОтборТэгов</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<Shortcut>Ctrl+Space</Shortcut>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>1</Height>
+													<AutoMaxHeight>false</AutoMaxHeight>
+													<DropListWidth>73</DropListWidth>
+													<ContextMenu name="ОтборТэговКонтекстноеМеню" id="182"/>
+													<ExtendedTooltip name="ОтборТэговРасширеннаяПодсказка" id="183"/>
+													<Events>
+														<Event name="OnChange">ОтборТэговПриИзменении</Event>
+														<Event name="AutoComplete">ОтборТэговАвтоПодбор</Event>
+													</Events>
+												</InputField>
+												<CommandBar name="Группа21" id="165">
+													<ExtendedTooltip name="Группа21РасширеннаяПодсказка" id="166"/>
+													<ChildItems>
+														<Button name="ФорматированиеВыкл" id="169">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ФорматированиеВыкл</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Удалить форматирование</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ФорматированиеВыклРасширеннаяПодсказка" id="170"/>
+														</Button>
+														<Button name="ФорматированиеВкл" id="167">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ФорматированиеВкл</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Восстановить форматирование</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ФорматированиеВклРасширеннаяПодсказка" id="168"/>
+														</Button>
+														<Button name="Автоформат" id="175">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.Автоформат</CommandName>
+															<ExtendedTooltip name="АвтоформатРасширеннаяПодсказка" id="176"/>
+														</Button>
+													</ChildItems>
+												</CommandBar>
+												<InputField name="Выражение" id="1">
+													<DataPath>Выражение</DataPath>
+													<DefaultItem>true</DefaultItem>
+													<TitleLocation>None</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<AutoMaxHeight>false</AutoMaxHeight>
+													<MultiLine>true</MultiLine>
+													<ExtendedEdit>true</ExtendedEdit>
+													<Font ref="style:NormalTextFont" faceName="Courier New" height="12" kind="StyleItem"/>
+													<ContextMenu name="ВыражениеКонтекстноеМеню" id="2">
+														<Autofill>false</Autofill>
+														<ChildItems>
+															<Button name="ВыражениеКонтекстноеМенюПрисвоитьИмяЗначению" id="191">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ПрисвоитьИмяЗначению</CommandName>
+																<ExtendedTooltip name="ВыражениеКонтекстноеМенюПрисвоитьИмяЗначениюРасширеннаяПодсказка" id="192"/>
+															</Button>
+															<Button name="ВыражениеКонтекстноеМенюЗаменитьИмяЗначением" id="189">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ЗаменитьИмяЗначением</CommandName>
+																<ExtendedTooltip name="ВыражениеКонтекстноеМенюЗаменитьИмяЗначениемРасширеннаяПодсказка" id="190"/>
+															</Button>
+															<ButtonGroup name="ВыражениеКонтекстноеМенюГруппа1" id="193">
+																<ExtendedTooltip name="ВыражениеКонтекстноеМенюГруппа1РасширеннаяПодсказка" id="194"/>
+															</ButtonGroup>
+														</ChildItems>
+													</ContextMenu>
+													<ExtendedTooltip name="ВыражениеРасширеннаяПодсказка" id="3"/>
+													<Events>
+														<Event name="StartChoice">ВыражениеНачалоВыбора</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаВарианты" id="205">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Варианты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа варианты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаВариантыРасширеннаяПодсказка" id="206"/>
+					<ChildItems>
+						<UsualGroup name="Группа3" id="226">
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="227"/>
+							<ChildItems>
+								<UsualGroup name="Группа6" id="228">
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="229"/>
+									<ChildItems>
+										<UsualGroup name="Группа22" id="253">
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа22РасширеннаяПодсказка" id="254"/>
+											<ChildItems>
+												<Button name="Выбрать" id="265">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>Form.Item.Варианты.StandardCommand.Choose</CommandName>
+													<ExtendedTooltip name="ВыбратьРасширеннаяПодсказка" id="266"/>
+												</Button>
+												<UsualGroup name="Группа24" id="263">
+													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа24РасширеннаяПодсказка" id="264"/>
+													<ChildItems>
+														<Button name="ПереместитьВниз" id="259">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Item.Варианты.StandardCommand.MoveDown</CommandName>
+															<ExtendedTooltip name="ПереместитьВнизРасширеннаяПодсказка" id="260"/>
+														</Button>
+														<Button name="ПереместитьВверх" id="257">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Item.Варианты.StandardCommand.MoveUp</CommandName>
+															<ExtendedTooltip name="ПереместитьВверхРасширеннаяПодсказка" id="258"/>
+														</Button>
+														<Button name="Изменить" id="255">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Item.Варианты.StandardCommand.Change</CommandName>
+															<ExtendedTooltip name="ИзменитьРасширеннаяПодсказка" id="256"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<Table name="Варианты" id="207">
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChoiceMode>true</ChoiceMode>
+											<Header>false</Header>
+											<HorizontalLines>false</HorizontalLines>
+											<VerticalLines>false</VerticalLines>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<FileDragMode>AsFile</FileDragMode>
+											<DataPath>Варианты</DataPath>
+											<RowPictureDataPath>Варианты.Picture</RowPictureDataPath>
+											<CommandSet>
+												<ExcludedCommand>Add</ExcludedCommand>
+											</CommandSet>
+											<ContextMenu name="ВариантыКонтекстноеМеню" id="208">
+												<ChildItems>
+													<ButtonGroup name="ВариантыКонтекстноеМенюГруппа1" id="247">
+														<ExtendedTooltip name="ВариантыКонтекстноеМенюГруппа1РасширеннаяПодсказка" id="248"/>
+														<ChildItems>
+															<Button name="ВариантыКонтекстноеМенюСортироватьСписокПоВозрастанию" id="249">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Item.Варианты.StandardCommand.SortListAsc</CommandName>
+																<ExtendedTooltip name="ВариантыКонтекстноеМенюСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="250"/>
+															</Button>
+															<Button name="ВариантыКонтекстноеМенюСортироватьСписокПоУбыванию" id="251">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Item.Варианты.StandardCommand.SortListDesc</CommandName>
+																<ExtendedTooltip name="ВариантыКонтекстноеМенюСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="252"/>
+															</Button>
+														</ChildItems>
+													</ButtonGroup>
+												</ChildItems>
+											</ContextMenu>
+											<AutoCommandBar name="ВариантыКоманднаяПанель" id="209"/>
+											<ExtendedTooltip name="ВариантыРасширеннаяПодсказка" id="210"/>
+											<SearchStringAddition name="ВариантыСтрокаПоиска" id="211">
+												<AdditionSource>
+													<Item>Варианты</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ВариантыСтрокаПоискаКонтекстноеМеню" id="212"/>
+												<ExtendedTooltip name="ВариантыСтрокаПоискаРасширеннаяПодсказка" id="213"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ВариантыСостояниеПросмотра" id="214">
+												<AdditionSource>
+													<Item>Варианты</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<HorizontalLocation>Left</HorizontalLocation>
+												<ContextMenu name="ВариантыСостояниеПросмотраКонтекстноеМеню" id="215"/>
+												<ExtendedTooltip name="ВариантыСостояниеПросмотраРасширеннаяПодсказка" id="216"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ВариантыУправлениеПоиском" id="217">
+												<AdditionSource>
+													<Item>Варианты</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ВариантыУправлениеПоискомКонтекстноеМеню" id="218"/>
+												<ExtendedTooltip name="ВариантыУправлениеПоискомРасширеннаяПодсказка" id="219"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="ValueChoice">ВариантыВыборЗначения</Event>
+												<Event name="Selection">ВариантыВыбор</Event>
+												<Event name="OnActivateRow">ВариантыПриАктивизацииСтроки</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="ВариантыПредставление" id="244">
+													<DataPath>Варианты.Presentation</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ВариантыПредставлениеКонтекстноеМеню" id="245"/>
+													<ExtendedTooltip name="ВариантыПредставлениеРасширеннаяПодсказка" id="246"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа17" id="230">
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="231"/>
+									<ChildItems>
+										<UsualGroup name="Группа20" id="238">
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа20РасширеннаяПодсказка" id="239"/>
+											<ChildItems>
+												<Button name="ЗапомнитьВариантВыражения" id="242">
+													<Type>UsualButton</Type>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>1</Height>
+													<CommandName>Form.Command.ЗапомнитьВариантВыражения</CommandName>
+													<ExtendedTooltip name="ЗапомнитьВариантВыраженияРасширеннаяПодсказка" id="243"/>
+												</Button>
+												<InputField name="ТекущийвариантКомментарий" id="235">
+													<DataPath>ТекущийКомментарий</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Краткий комментарий</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+													<ContextMenu name="ТекущийвариантКомментарийКонтекстноеМеню" id="236"/>
+													<ExtendedTooltip name="ТекущийвариантКомментарийРасширеннаяПодсказка" id="237"/>
+													<Events>
+														<Event name="OnChange">ТекущийвариантКомментарийПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="ТекущийВариантВыражение" id="232">
+											<DataPath>ТекущееВыражение</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<VerticalStretch>true</VerticalStretch>
+											<MultiLine>true</MultiLine>
+											<Font ref="style:NormalTextFont" faceName="Courier New" height="12" kind="StyleItem"/>
+											<ContextMenu name="ТекущийВариантВыражениеКонтекстноеМеню" id="233"/>
+											<ExtendedTooltip name="ТекущийВариантВыражениеРасширеннаяПодсказка" id="234"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УИ_КонструкторРегулярныхВыражений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Выражение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выражение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокТэгов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список тэгов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ИзвлеченноеФорматирование" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Извлеченное форматирование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЛеваяСкобкаПараметра" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Левая скобка параметра</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПраваяСкобкаПараметра" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правая скобка параметра</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборТэгов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор тэгов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТолькоПросмотрВыражения" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только просмотр выражения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ШаблонИмениПараметра" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаблон имени параметра</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Варианты" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Варианты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ВариантыСтр" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Варианты стр</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущееВыражение" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выражение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийКомментарий" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СписокТэгов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СписокТэгов.Пометка</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:LightGreen</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Экран" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>\</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Помечает следующий за ним символ как специальный символ, литерал, обратную ссылку или восьмеричную escape-последовательность.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="НачалоСтроки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>^</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует положению в начале входной строки. Если свойство Multiline объекта RegExp установлено в значение True, ^ также соответствует и положению после '\n' или '\r'.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="КонецСтроки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>$</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует положению в конце входной строки. Если свойство Multiline объекта RegExp установлено в значение True, $ также соответствует и положению перед '\n' или '\r'.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ПовторОт0" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>*</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует повторению предшествующего подвыражения ноль или более раз.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ПовторОт1" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>+</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует повторению предшествующего подвыражения один или более раз.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="Повтор01" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>?</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует повторению предшествующего подвыражения ноль или один раз.
+За любым другим квантификатором (*, +, ?, {n}, {n,}, {n,m}) объявляет шаблон "нежадным"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ПовторN" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>{n}</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>n является положительным целым числом. Соответствует точно n-ному количеству повторений.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ПовторБольшеN" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>{n,}</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>n является положительным целым числом. Соответствует хотя бы n-ному количеству повторений.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ПовторM" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>{,m}</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>m и n это положительные целые числа, причем n &lt;= m. Соответствует хотя бы n-ому и не более чем m-ому числу повторений.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="Точка" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>.</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует любому одиночному символу, кроме "\n". Чтобы шаблон соответствовал любому одиночному символу, включая и "\n", используйте выражение '[.\n]'.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ШаблонФикс" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(шаблон)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует шаблону и фиксирует это соответствие.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ШаблонНеФикс" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(?:шаблон)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует шаблону, но при этом не фиксирует это соответствие, то есть является соответствием, не сохраняемым для возможного будущего использования.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ВпередиЕсть" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(?=шаблон)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Положительное "заглядыванием вперед". Соответствует исходной строке в любой точке где начинается соответствие шаблону. Это нефиксируемое соответстствие, а это означает то, что найденное совпадение не сохраняется для возможного последующего использования.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ВпередиНет" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(?!шаблон)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отрицательное "заглядыванием вперед". Соответствует исходной строке в любой точке где нет начала соответствия шаблону. Это нефиксируемое соответстствие, что означает то, что найденное совпадение не сохраняется для возможного последующего использования.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="Вариант" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>|</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует или x, или y.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ДиапазонСимволов" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>[a-z]</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диапазон символов. Соответствует любому символу из указанного диапазона.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ДиапазонСимволовОтриц" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>[^a-z]</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>"Отрицательный" диапазон символов. Соответствует любому символу вне указанного диапазона.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ГраницаСлова" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>\b</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует границе слова, то есть позиции между словом и пробелом.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="НеГраницаСлова" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>\B</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует всем символам, кроме границы слов.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="Цифра" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>\d</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует цифре.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="НеЦифра" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>\D</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует нецифровому символу.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ПробельныйСимвол" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>\s</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует любому пробельному символу, включая пробел, табулятор и т.д. Эквивалентно [ \f\n\r\t\v].</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="НеПробельныйСимвол" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>\S</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует любому непробельному символу. Эквивалентно [^ \f\n\r\t\v]. </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="Идентификатор" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>\w</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует латинской букве, цифре или подчеркиванию. Эквивалентно '[A-Za-z0-9_]'. </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="НеИдентификатор" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>\W</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует любому символу, кроме латинской буквы, цифры или подчеркивания. Эквивалентно '[^A-Za-z0-9_]'. </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ПереводСтроки" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>\n</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует символу перевода строки (LF). </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ВозвратКаретки" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>\r</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует символу возврата каретки (CR). </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="Табуляция" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>\t</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует символу табуляции (HT). </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="СзадиЕсть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(?&lt;=шабл.)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Положительное "заглядыванием назад". </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="СзадиНет" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(?&lt;!шабл.)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отрицательное "заглядыванием назад". </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="Тэг" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;...&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скобки параметра</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+Shift+Space</Shortcut>
+			<Action>Тэг</Action>
+		</Command>
+		<Command name="Ввести" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Ввести</Action>
+		</Command>
+		<Command name="ПовторОт0НеЖадный" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>*?</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует повторению предшествующего подвыражения ноль или более раз.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ПовторОт1НеЖадный" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>+?</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует повторению предшествующего подвыражения один или более раз.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ВариантБезФиксации" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(?:|)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствует или x, или y.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ФорматированиеВыкл" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Форматирование выкл.</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Форматирование выкл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ФорматированиеВыкл</Action>
+		</Command>
+		<Command name="ФорматированиеВкл" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Форматирование вкл.</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Форматирование выкл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ФорматированиеВкл</Action>
+		</Command>
+		<Command name="Команда1" id="17"/>
+		<Command name="КруглыеСкобки" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(...)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Круглые скобки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ФигурныеСкобки" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>{...}</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фигурные скобки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="Автоформат" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Форматировать автоматически</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоформат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Автоформат</Action>
+		</Command>
+		<Command name="ВыбратьИмя" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать имя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать имя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьИмя</Action>
+		</Command>
+		<Command name="ВыбратьЗначение" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать значение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать значение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьЗначение</Action>
+		</Command>
+		<Command name="ПрисвоитьИмяЗначению" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Присвоить имя значению</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Присвоить имя значению</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрисвоитьИмяЗначению</Action>
+		</Command>
+		<Command name="ЗаменитьИмяЗначением" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить имя значением</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить имя значением</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаменитьИмяЗначением</Action>
+		</Command>
+		<Command name="НайтиИЗаменитьВсеВхожденияЗначения" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти и заменить все вхождения значения на имя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти и заменить все вхождения значения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НайтиИЗаменитьВсеВхожденияЗначения</Action>
+		</Command>
+		<Command name="НайтиИЗаменитьВсеВхожденияИмени" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти и заменить все вхождения имени на значения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти и заменить все вхождения имени</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НайтиИЗаменитьВсеВхожденияИмени</Action>
+		</Command>
+		<Command name="ЗапомнитьВариантВыражения" id="48">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запомнить вариант выражения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запомнить вариант выражения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SettingsStorage</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗапомнитьВариантВыражения</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Выражение">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="СписокДляВыбора">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="Заголовок">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ЛеваяСкобкаПараметра">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ПраваяСкобкаПараметра">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ТолькоПросмотр">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ШаблонИмениПараметра">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Варианты">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

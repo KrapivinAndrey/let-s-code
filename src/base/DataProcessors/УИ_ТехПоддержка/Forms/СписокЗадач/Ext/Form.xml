@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОбновитьСписокЗадач" id="29">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьСписокЗадач</CommandName>
+				<ExtendedTooltip name="ФормаОбновитьСписокЗадачРасширеннаяПодсказка" id="30"/>
+			</Button>
+			<Button name="ФормаСтраницаРазработки" id="55">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СтраницаРазработки</CommandName>
+				<ExtendedTooltip name="ФормаСтраницаРазработкиРасширеннаяПодсказка" id="56"/>
+			</Button>
+			<Button name="ФормаСоздатьНовуюЗадачуНаГитхабе" id="50">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьНовуюЗадачуНаГитхабе</CommandName>
+				<ExtendedTooltip name="ФормаСоздатьНовуюЗадачуНаГитхабеРасширеннаяПодсказка" id="51"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<Page name="ГруппаНоваяЗадача" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новая задача</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка1" id="37"/>
+					<ChildItems>
+						<InputField name="НоваяЗадачаТема" id="40">
+							<DataPath>НоваяЗадачаТема</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ПолеКонтекстноеМеню3" id="41"/>
+							<ExtendedTooltip name="ПолеРасширеннаяПодсказка3" id="42"/>
+						</InputField>
+						<TextDocumentField name="НоваяЗадачаОписание" id="43">
+							<DataPath>НоваяЗадачаОписание</DataPath>
+							<ContextMenu name="ПолеКонтекстноеМеню6" id="44"/>
+							<ExtendedTooltip name="ПолеРасширеннаяПодсказка6" id="45"/>
+						</TextDocumentField>
+						<LabelDecoration name="ДекорацияПредупреждение" id="52">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Font faceName="" height="18" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;b&gt;ВАЖНО!!! &lt;/&gt;Если вы создаете задачу не через &lt;link https://github.com/cpr1c/tools_ui_1c/issues&gt;https://github.com&lt;/&gt;, а через эту форму вы &lt;b&gt;НЕ БУДЕТЕ&lt;/&gt; &lt;b&gt;получать оповещения&lt;/&gt; о ее изменении</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Auto</HorizontalAlign>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="54"/>
+						</LabelDecoration>
+						<Button name="СоздатьНовуюЗадачу" id="46">
+							<Type>UsualButton</Type>
+							<DefaultButton>true</DefaultButton>
+							<Height>7</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.СоздатьНовуюЗадачу</CommandName>
+							<ExtendedTooltip name="СоздатьНовуюЗадачуРасширеннаяПодсказка" id="47"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСписокЗадач" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список задач</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка2" id="39"/>
+					<ChildItems>
+						<Table name="СписокЗадач" id="1">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокЗадач</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="КонтекстноеМеню" id="3"/>
+							<AutoCommandBar name="КоманднаяПанель" id="2">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="РасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="Addition" id="5">
+								<AdditionSource>
+									<Item>СписокЗадач</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ContextMenu" id="6"/>
+								<ExtendedTooltip name="ExtendedTooltip" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="Addition" id="11">
+								<AdditionSource>
+									<Item>СписокЗадач</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="ContextMenu" id="12"/>
+								<ExtendedTooltip name="ExtendedTooltip" id="13"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="Addition" id="8">
+								<AdditionSource>
+									<Item>СписокЗадач</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ContextMenu" id="9"/>
+								<ExtendedTooltip name="ExtendedTooltip" id="10"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокЗадачВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="СписокЗадачНомер" id="14">
+									<DataPath>СписокЗадач.Номер</DataPath>
+									<Width>1</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>1</MaxWidth>
+									<ContextMenu name="ПолеКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ПолеРасширеннаяПодсказка" id="16"/>
+								</InputField>
+								<InputField name="СписокЗадачТема" id="17">
+									<DataPath>СписокЗадач.Тема</DataPath>
+									<ContextMenu name="ПолеКонтекстноеМеню1" id="18"/>
+									<ExtendedTooltip name="ПолеРасширеннаяПодсказка1" id="19"/>
+								</InputField>
+								<InputField name="СписокЗадачОтветственный" id="20">
+									<DataPath>СписокЗадач.Ответственный</DataPath>
+									<ContextMenu name="ПолеКонтекстноеМеню2" id="21"/>
+									<ExtendedTooltip name="ПолеРасширеннаяПодсказка2" id="22"/>
+								</InputField>
+								<InputField name="СписокЗадачСтатус" id="31">
+									<DataPath>СписокЗадач.Статус</DataPath>
+									<ContextMenu name="ПолеКонтекстноеМеню5" id="32"/>
+									<ExtendedTooltip name="ПолеРасширеннаяПодсказка5" id="33"/>
+								</InputField>
+								<InputField name="СписокЗадачТеги" id="26">
+									<DataPath>СписокЗадач.Теги</DataPath>
+									<ContextMenu name="ПолеКонтекстноеМеню4" id="27"/>
+									<ExtendedTooltip name="ПолеРасширеннаяПодсказка4" id="28"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УИ_ТехПоддержка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокЗадач" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список задач</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Номер" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Тема" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тема</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ответственный" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="URL" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>URL</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Теги" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Теги</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueListType</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Статус" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НоваяЗадачаТема" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тема</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="НоваяЗадачаОписание" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьСписокЗадач" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список задач</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьСписокЗадач</Action>
+		</Command>
+		<Command name="СоздатьНовуюЗадачу" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новую задачу</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СоздатьНовуюЗадачу</Action>
+		</Command>
+		<Command name="СоздатьНовуюЗадачуНаГитхабе" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новую задачу на GitHub</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СоздатьНовуюЗадачуНаГитхабе</Action>
+		</Command>
+		<Command name="СтраницаРазработки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страница разработки</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.УИ_Репозиторий</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>СтраницаРазработки</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="20">
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="21"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПоиск" id="27">
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка1" id="28"/>
+					<ChildItems>
+						<InputField name="ИсходныйОбъект" id="1">
+							<DataPath>Объект.ИсходныйОбъект</DataPath>
+							<ContextMenu name="ИсходныйОбъектКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ИсходныйОбъектРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">ИсходныйОбъектПриИзменении</Event>
+							</Events>
+						</InputField>
+						<Button name="ИсходныйОбъектПоСсылке" id="86">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<Width>3</Width>
+							<CommandName>Form.Command.ИсходныйОбъектПоСсылке</CommandName>
+							<ExtendedTooltip name="ИсходныйОбъектПоСсылкеРасширеннаяПодсказка" id="87"/>
+						</Button>
+						<Button name="РедактироватьИсходныйОбъект" id="84">
+							<Type>UsualButton</Type>
+							<Width>3</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<CommandName>Form.Command.РедактироватьИсходныйОбъект</CommandName>
+							<ExtendedTooltip name="РедактироватьИсходныйОбъектРасширеннаяПодсказка" id="85"/>
+						</Button>
+						<InputField name="УникальныйИдентификаторИсточника" id="24">
+							<DataPath>УникальныйИдентификаторИсточника</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Идентификатор</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="УИДКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="УИДРасширеннаяПодсказка" id="26"/>
+						</InputField>
+						<Button name="НайтиСсылки" id="22">
+							<Type>UsualButton</Type>
+							<DefaultButton>true</DefaultButton>
+							<CommandName>Form.Command.НайтиСсылки</CommandName>
+							<ExtendedTooltip name="НайтиСсылкиРасширеннаяПодсказка" id="23"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="РезультатПоиска" id="34">
+			<Representation>List</Representation>
+			<ReadOnly>true</ReadOnly>
+			<Footer>true</Footer>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>РезультатПоиска</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаКонтекстноеМеню" id="36">
+				<ChildItems>
+					<Button name="ТаблицаКонтекстноеМенюОткрытьОбъект" id="68">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОткрытьОбъект</CommandName>
+						<ExtendedTooltip name="ТаблицаКонтекстноеМенюОткрытьОбъектРасширеннаяПодсказка" id="69"/>
+					</Button>
+					<Button name="ТаблицаКонтекстноеМенюПоискДляОбъекта" id="70">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПоискДляОбъекта</CommandName>
+						<ExtendedTooltip name="ТаблицаКонтекстноеМенюПоискДляОбъектаРасширеннаяПодсказка" id="71"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="КоманднаяПанель" id="35">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="РезультатПоискаОткрытьОбъект" id="72">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОткрытьОбъект</CommandName>
+						<ExtendedTooltip name="РезультатПоискаОткрытьОбъектРасширеннаяПодсказка" id="73"/>
+					</Button>
+					<Button name="РезультатПоискаПоискДляОбъекта" id="74">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПоискДляОбъекта</CommandName>
+						<ExtendedTooltip name="РезультатПоискаПоискДляОбъектаРасширеннаяПодсказка" id="75"/>
+					</Button>
+					<Button name="Найти" id="76">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.РезультатПоиска.StandardCommand.Find</CommandName>
+						<ExtendedTooltip name="НайтиРасширеннаяПодсказка" id="77"/>
+					</Button>
+					<Button name="РезультатПоискаОтменитьПоиск" id="78">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.РезультатПоиска.StandardCommand.CancelSearch</CommandName>
+						<ExtendedTooltip name="РезультатПоискаОтменитьПоискРасширеннаяПодсказка" id="79"/>
+					</Button>
+					<Button name="РезультатПоискаВывестиСписок" id="80">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.РезультатПоиска.StandardCommand.OutputList</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="РезультатПоискаВывестиСписокРасширеннаяПодсказка" id="81"/>
+					</Button>
+					<Button name="РезультатПоискаРедактироватьОбъект" id="82">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.РедактироватьОбъект</CommandName>
+						<ExtendedTooltip name="РезультатПоискаРедактироватьОбъектРасширеннаяПодсказка" id="83"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаРасширеннаяПодсказка" id="37"/>
+			<SearchStringAddition name="ТаблицаСтрокаПоиска" id="38">
+				<AdditionSource>
+					<Item>РезультатПоиска</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ContextMenu" id="39"/>
+				<ExtendedTooltip name="ExtendedTooltip" id="40"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="Addition" id="44">
+				<AdditionSource>
+					<Item>РезультатПоиска</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<HorizontalLocation>Left</HorizontalLocation>
+				<ContextMenu name="ContextMenu" id="45"/>
+				<ExtendedTooltip name="ExtendedTooltip" id="46"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаУправлениеПоиском" id="41">
+				<AdditionSource>
+					<Item>РезультатПоиска</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ContextMenu" id="42"/>
+				<ExtendedTooltip name="ExtendedTooltip" id="43"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">РезультатПоискаВыбор</Event>
+				<Event name="OnActivateRow">РезультатПоискаПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="РезультатПоискаНайденныеСсылки" id="50">
+					<DataPath>РезультатПоиска.ПредставлениеОбъекта</DataPath>
+					<FooterDataPath>Объект.КоличествоНайденных</FooterDataPath>
+					<FooterText>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Найдено ссылок:</v8:content>
+						</v8:item>
+					</FooterText>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<ContextMenu name="ПолеКонтекстноеМеню1" id="51"/>
+					<ExtendedTooltip name="ПолеРасширеннаяПодсказка1" id="52"/>
+				</InputField>
+				<InputField name="РезультатПоискаУникальныйИдентификатор" id="59">
+					<DataPath>РезультатПоиска.УникальныйИдентификатор</DataPath>
+					<ContextMenu name="ПолеКонтекстноеМеню4" id="60"/>
+					<ExtendedTooltip name="ПолеРасширеннаяПодсказка4" id="61"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УИ_ПоискСсылокНаОбъект</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="УникальныйИдентификаторИсточника" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уникальный идентификатор источника</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатПоиска" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат поиска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеОбъекта" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НайденныйОбъект" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Найденный объект</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="Картинка" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+				<Column name="УникальныйИдентификатор" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уникальный идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="МожноОткрыть" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Можно открыть</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СсылочныйТип" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылочный тип</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НайтиСсылки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти ссылки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти ссылки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НайтиСсылки</Action>
+		</Command>
+		<Command name="ОткрытьОбъект" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть объект</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьОбъект</Action>
+		</Command>
+		<Command name="ПоискДляОбъекта" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск для объекта</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоискДляОбъекта</Action>
+		</Command>
+		<Command name="РедактироватьОбъект" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать объект</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.УИ_РедакторОбъектовБазыДанных</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>РедактироватьОбъект</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="РедактироватьИсходныйОбъект" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать исходный объект</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.УИ_РедакторОбъектовБазыДанных</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>РедактироватьИсходныйОбъект</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ИсходныйОбъектПоСсылке" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исходный объект по ссылке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исходный объект по навигационной ссылке</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GotoURL</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИсходныйОбъектПоСсылке</Action>
+		</Command>
+	</Commands>
+</Form>

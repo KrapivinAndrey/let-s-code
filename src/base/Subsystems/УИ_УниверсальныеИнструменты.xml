@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Subsystem uuid="420d125a-5388-46d1-a2c2-ba1347e3e5fd">
+		<Properties>
+			<Name>УИ_УниверсальныеИнструменты</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструменты</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.УИ_Инструменты</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_ГрупповаяОбработкаСправочниковИДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_РедакторКонстант</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_СтруктураХраненияБазыДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_УдалениеПомеченныхОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_ВыполнениеРегламентныхЗаданийНаКлиенте</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_КонсольЗапросов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_КонсольЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_РегистрацияИзмененийДляОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_КонсольКода</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_ПоискИУдалениеДублей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.УИ_Алгоритмы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_ПоискСсылокНаОбъект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_РедакторРеквизитовОбъекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.УИ_КонсольОтчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_ДинамическийСписок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_КонсольHTTPЗапросов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_ВыгрузкаЗагрузкаДанныхXMLСФильтрами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_ПодсистемаУниверсальныеИнструмены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_ВыполнитьРегламентноеЗаданиеВручную</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_СостоянияПланаОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_ВидыОбъектовМетаданных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_Информация32</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_РезультатЗапроса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_РезультатВыгрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_СостоянияАвторегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_Семафор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_ВопросРазработчику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_Репозиторий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_Отладка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.УИ_КомпонентаПоискаСтрок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.УИ_ДлительнаяОперация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.УИ_ФормаТаблицыЗначений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.УИ_ФормаСпецЗначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.УИ_ФормаРедактированияТекста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.УИ_ФормаХранилищаЗначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.УИ_ФормаВыбораТипаОбъекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.УИ_УниверсальныеИнструменты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_РаботаСФормами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_ДлительныеОперацииВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_ДлительныеОперацииГлобальный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_ДлительныеОперацииКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_ДлительныеОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_РегламентныеЗаданияСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_РегламентныеЗаданияСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_ОбщегоНазначенияПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_ОбщегоНазначенияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_ОбщегоНазначенияВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_ОбщегоНазначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_ОбщегоНазначенияКлиентПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_СтроковыеФункцииКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_ОбщегоНазначенияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_АлгоритмыКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_КоннекторHTTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_НавигаторПоКонфигурации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_КонструкторРегулярныхВыражений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_ФайловыйМенеджер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_ИнформацияОЛицензиях1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_КонсольСравненияДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_КонсольВебСервисов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_ЗагрузкаДанныхИзТабличногоДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_МенеджерХранилищНастроек</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_РедакторJSON</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_РедакторHTML</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_УниверсальныйОбменДаннымиXML</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_РегулярныеВыраженияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_РедакторКодаСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_РедакторКодаКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.УИ_ПараметрыЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.УИ_КомпонентаРаботыСРегулярнымиВыражениямиRegExБраузеры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.УИ_КомпонентаРаботыСРегулярнымиВыражениямиRegEx</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.УИ_Ace</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_Вопрос32</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_КоллекцияПиктограммФайлов48</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_JSON</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_КоллекцияПиктограммФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_РедакторОбъектовБазыДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_Информация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.УИ_ПубликуемыеФункции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_ПреобразованиеДанныхJSON</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.УИ_КомпонентаДляРаботыСБуферомОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УИ_БуферОбменаКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_РедакторСКД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_Строка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_Дата</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_Булево</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_УникальныйИдентификатор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_Null</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_ПроизвольныйТип</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_ВидДвиженияНакопления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_Массив</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УИ_СравнениеОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.УИ_НастройкиИнструментов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.УИ_НастройкиИнструментов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УИ_Инструменты</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>УИ_Поддержка</Subsystem>
+			<Subsystem>УИ_Отладка</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

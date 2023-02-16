@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаПрименить" id="20">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Применить</CommandName>
+				<ExtendedTooltip name="ФормаПрименитьРасширеннаяПодсказка" id="21"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="22">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="23"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="СписокЗначений" id="1">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>СписокЗначений</DataPath>
+			<ContextMenu name="СписокЗначенийКонтекстноеМеню" id="3"/>
+			<AutoCommandBar name="СписокЗначенийКоманднаяПанель" id="2"/>
+			<ExtendedTooltip name="СписокЗначенийРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокЗначенийСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>СписокЗначений</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокЗначенийСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокЗначенийСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокЗначенийСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>СписокЗначений</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокЗначенийСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокЗначенийСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокЗначенийУправлениеПоиском" id="8">
+				<AdditionSource>
+					<Item>СписокЗначений</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокЗначенийУправлениеПоискомКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокЗначенийУправлениеПоискомРасширеннаяПодсказка" id="10"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="СписокЗначенийПометка" id="17">
+					<DataPath>СписокЗначений.Check</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокЗначенийПометкаКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СписокЗначенийПометкаРасширеннаяПодсказка" id="19"/>
+				</CheckBoxField>
+				<InputField name="СписокЗначенийЗначение" id="14">
+					<DataPath>СписокЗначений.Value</DataPath>
+					<ContextMenu name="СписокЗначенийЗначениеКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СписокЗначенийЗначениеРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="СписокЗначенийПредставление" id="24">
+					<DataPath>СписокЗначений.Presentation</DataPath>
+					<ContextMenu name="СписокЗначенийПредставлениеКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="СписокЗначенийПредставлениеРасширеннаяПодсказка" id="26"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокЗначений" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список значений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ВозвращатьТолькоВыбранныеЗначения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Возвращать только выбранные значения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Применить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Применить</Action>
+		</Command>
+	</Commands>
+</Form>
